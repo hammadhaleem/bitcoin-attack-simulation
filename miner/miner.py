@@ -39,11 +39,11 @@ class Miner(threading.Thread ):
             #     print(r.text)
         result = (grequests.get(u) for u in urls)
         result = [eval(a.text)['data'] for  a in grequests.map(result)]
-        for i in range(self.allChains):
-            
+        for i in range(len(self.allChains)):
+            self.allChains[i]['my_relative_power'] = result[i]['relative_power']
         #print(str(self.ID) + "\n" + str(result[1]))
-    #def do_mining(self):
-
+    def do_mining(self):
+        print("/")
     def run(self):
         a = time.time()
         self.discover_chains()

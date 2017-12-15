@@ -4,7 +4,7 @@ import grequests
 import time
 import asyncio, threading, sys
 import pprint as pp
-serverurl = 'http://10.89.91.27:5000'
+serverurl = 'http://10.89.91.27:5000' if int(sys.argv[1]) == 1 else 'http://0.0.0.0:5000'
 class Miner(threading.Thread ):
     def __init__(self):
         threading.Thread.__init__(self)

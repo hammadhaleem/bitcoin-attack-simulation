@@ -14,7 +14,7 @@ class Miner(threading.Thread ):
         r = requests.get(serverurl+"/join/"+str(self.totalPower))
         self.ID = eval(r.text)['data']['miner_id']
 
-        #self.discover_chains()
+        self.discover_chains()
 
     def discover_chains(self):
         r = requests.get(serverurl+"/discover/")
@@ -39,7 +39,7 @@ class Miner(threading.Thread ):
         for i in range(len(self.allChains)):
             startVal,endVal = 0
             relativePower = self.allChains[i]['my_relative_power']
-            
+
 
     def run(self):
         start_time = time.time()
@@ -55,4 +55,4 @@ Miners = []
 a = time.time()
 for i in range(100):
     Miners.append(Miner())
-    #Miners[-1].start()
+    Miners[-1].start()

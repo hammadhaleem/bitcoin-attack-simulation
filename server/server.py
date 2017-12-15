@@ -30,7 +30,7 @@ for i in range(1, number_of_chains+1):
 			'reward' : 10,
 			'step' : 0,
 			'total_power' : 0,
-			'winner_last' : None,
+			'winner_last' : -1,
 			'solution' : 10
 		}
 

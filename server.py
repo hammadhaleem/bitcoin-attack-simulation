@@ -60,7 +60,7 @@ def return_miner_info():
 @app.route('/refresh/')
 @app.route('/refresh')
 def refresh():
-	while miners_:
+	while miners:
 		miners_.pop()
 
 	for i in miners_.keys():

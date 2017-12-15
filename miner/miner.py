@@ -38,10 +38,9 @@ class Miner(threading.Thread ):
             #     r = requests.get(serverurl+"/chain_powers/"+str(val['chain_id'])+'/'+str(power)+'/'+str(self.ID))
             #     print(r.text)
         result = (grequests.get(u) for u in urls)
-        result = [eval(a.text) for  a in grequests.map(result)]
-
-        for i in result:
-            pp.pprint(i)
+        result = [eval(a.text)['data'] for  a in grequests.map(result)]
+        for i in range(self.allChains):
+            
         #print(str(self.ID) + "\n" + str(result[1]))
     #def do_mining(self):
 

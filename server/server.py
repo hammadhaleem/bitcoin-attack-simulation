@@ -60,18 +60,20 @@ def return_miner_info():
 @app.route('/refresh/')
 @app.route('/refresh')
 def refresh():
+	# time.sleep(10)
 	while miners:
-		miners_.pop()
+		miners.pop()
 
-	for i in miners_.keys():
+	s=set(miners_.keys())
+	for i in s:
 		del miners_[i]
 
+	s=set(miners_mining.keys())
+	for i in s:
+		del miners_mining[i]
 
-	for i in miners_mining.keys():
-		del miners_[i]
-
-
-	for i in chain_power_allocated.keys():
+	s=set(chain_power_allocated.keys())
+	for i in s:
 		del chain_power_allocated[i]
 
 

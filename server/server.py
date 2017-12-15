@@ -128,8 +128,18 @@ def chain_powers(chain, current_power, miner_id):
 		if return_ == True:
 			break
 
+	chain_info = chain_power_allocated[chain]
 
-	return jsonify(data=chain_power_allocated)
+
+	powers = [ int(chain_info[miner]) for miner in chain_info.keys()]
+
+	return jsonify(data={
+		'relative_power' : float(current_power) / sum(powers),
+		'powers' : str(powers),
+		'miner_id' : miner_id,
+		'chain': chain,
+		'current_power' : current_power
+	})
 
 
 @app.route("/who_won/<miner_id>/<solution>/<chain_step>/<chain_id>")

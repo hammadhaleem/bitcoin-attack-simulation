@@ -8,9 +8,9 @@ import shutil
 from flask import Flask, Response
 import uuid,time
 
-from settings import * 
+from settings import *
 
-chain_step = 0 
+chain_step = 0
 
 initialize_lock = []
 state_cache ={}
@@ -21,7 +21,7 @@ miners_ ={}
 
 miners_mining  = {}
 
-## chain information 
+## chain information
 chains = {}
 for i in range(1, number_of_chains+1):
 	chains[i] = {
@@ -32,9 +32,9 @@ for i in range(1, number_of_chains+1):
 		}
 
 chain_power_allocated = {
-	
+
 }
-# # # # # 
+# # # # #
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -43,7 +43,7 @@ app.config['DEBUG'] = True
 def return_none():
 	return jsonify({})
 
-## Function to debugg 
+## Function to debugg
 @app.route("/get_all_chains")
 def return_chains():
 	return jsonify(data=
@@ -92,7 +92,7 @@ def join(power):
 	miners.append(miner_id)
 	miners_[miner_id] = int(power)
 	return jsonify(data={'miner_id': miner_id})
-	
+
 
 @app.route('/discover/')
 def discover_chains():
@@ -143,13 +143,13 @@ def who_won(next_id):
 
 
 	# if chain_step != current_step:
-	# 	# tell you lost, 
+	# 	# tell you lost,
 	# 	# tell go to get_info_again
 	# else:
-	# 	# get lock 
-	# 	# update state 
-	# 	# release lock 
-	# 	# change state 
+	# 	# get lock
+	# 	# update state
+	# 	# release lock
+	# 	# change state
 	# while locks
 
 	return jsonify(data={'error' : str(e)})

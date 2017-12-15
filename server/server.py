@@ -7,6 +7,7 @@ from networkx.readwrite import json_graph
 import shutil
 from flask import Flask, Response
 import uuid,time
+import random
 
 from settings import * 
 
@@ -28,7 +29,9 @@ for i in range(1, number_of_chains+1):
 			'chain_id': i,
 			'reward' : 10,
 			'step' : 0,
-			'total_power' : 0
+			'total_power' : 0,
+			'winner_last' : None,
+			'solution' : 10
 		}
 
 chain_power_allocated = {
@@ -138,21 +141,40 @@ def chain_powers(chain, current_power, miner_id):
 	})
 
 
+winning_lock = []
 @app.route("/who_won/<miner_id>/<solution>/<chain_step>/<chain_id>")
-def who_won(next_id):
+def who_won(miner_id, solution, chain_step, chain_id):
+	chain_id = int(chain_id)
+	# verify minder id 
+
+	winning_lock.append(miner_id)
+
+	while True:
+
+		obj = chain[chain_id]
+
+		# it my turn 
+		if winning_lock[0] == miner_id:
+			break
+
+		# someone else came before me 
+		if obj['step'] > chain_step:
+			break
+
+	# update the chain if you won
+	if  obj['step'] == chain_step and solution == obj['solution']:
+		obj['step'] += 1
+		obj['winner_last'] = miner_id
+		obj['solution'] = random.randint(1,101)
+
+		chain[chain_id] = obj
+
+	# else get you didn't win you get winners name 
+	winning_lock.pop(0)
+
+	return jsonify(data=obj)
 
 
-	# if chain_step != current_step:
-	# 	# tell you lost, 
-	# 	# tell go to get_info_again
-	# else:
-	# 	# get lock 
-	# 	# update state 
-	# 	# release lock 
-	# 	# change state 
-	# while locks
-
-	return jsonify(data={'error' : str(e)})
 
 @app.route("/")
 @app.route("/get_info_response/")

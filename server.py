@@ -8,9 +8,9 @@ import shutil
 from flask import Flask, Response
 import uuid,time
 
-from settings import * 
+from settings import *
 
-chain_step = 0 
+chain_step = 0
 
 initialize_lock = []
 state_cache ={}
@@ -21,7 +21,7 @@ miners_ ={}
 
 miners_mining  = {}
 
-## chain information 
+## chain information
 chains = {}
 for i in range(1, number_of_chains+1):
 	chains[i] = {
@@ -32,9 +32,9 @@ for i in range(1, number_of_chains+1):
 		}
 
 chain_power_allocated = {
-	
+
 }
-# # # # # 
+# # # # #
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -43,7 +43,7 @@ app.config['DEBUG'] = True
 def return_none():
 	return jsonify({})
 
-## Function to debugg 
+## Function to debugg
 @app.route("/get_all_chains")
 def return_chains():
 	return jsonify(data=
@@ -60,21 +60,20 @@ def return_miner_info():
 @app.route('/refresh/')
 @app.route('/refresh')
 def refresh():
-	# time.sleep(10)
 	while miners:
-		miners.pop()
+		miners_.pop()
 
-	s=set(miners_.keys())
-	for i in s:
+	for i in miners_.keys():
 		del miners_[i]
 
-	s=set(miners_mining.keys())
-	for i in s:
-		del miners_mining[i]
 
-	s=set(chain_power_allocated.keys())
-	for i in s:
+	for i in miners_mining.keys():
+		del miners_[i]
+
+
+	for i in chain_power_allocated.keys():
 		del chain_power_allocated[i]
+
 
 	for i in range(1, number_of_chains+1):
 		chains[i] = {
@@ -84,6 +83,8 @@ def refresh():
 				'total_power' : 0
 			}
 
+
+	print(miners_mining)
 	return jsonify(data={})
 
 @app.route('/join/<power>')
@@ -92,7 +93,7 @@ def join(power):
 	miners.append(miner_id)
 	miners_[miner_id] = int(power)
 	return jsonify(data={'miner_id': miner_id})
-	
+
 
 @app.route('/discover/')
 def discover_chains():
@@ -114,6 +115,7 @@ def chain_powers(chain, current_power, miner_id):
 	while True:
 		return_ = False
 		for i in range(1, number_of_chains+1):
+			# print(("wait", number_of_chains , len(chain_power_allocated.keys())))
 
 			if number_of_chains == len(chain_power_allocated.keys()) and \
 				len(miners_.keys()) == len(chain_power_allocated[i].keys()):
@@ -124,18 +126,8 @@ def chain_powers(chain, current_power, miner_id):
 		if return_ == True:
 			break
 
-	chain_info = chain_power_allocated[chain]
 
-
-	powers = [ int(chain_info[miner]) for miner in chain_info.keys()]
-
-	return jsonify(data={
-		'relative_power' : float(current_power) / sum(powers),
-		'powers' : str(powers),
-		'miner_id' : miner_id,
-		'chain': chain,
-		'current_power' : current_power
-	})
+	return jsonify(data=chain_power_allocated)
 
 
 @app.route("/who_won/<miner_id>/<solution>/<chain_step>/<chain_id>")
@@ -143,13 +135,13 @@ def who_won(next_id):
 
 
 	# if chain_step != current_step:
-	# 	# tell you lost, 
+	# 	# tell you lost,
 	# 	# tell go to get_info_again
 	# else:
-	# 	# get lock 
-	# 	# update state 
-	# 	# release lock 
-	# 	# change state 
+	# 	# get lock
+	# 	# update state
+	# 	# release lock
+	# 	# change state
 	# while locks
 
 	return jsonify(data={'error' : str(e)})

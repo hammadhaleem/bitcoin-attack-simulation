@@ -10,7 +10,6 @@ import uuid,time
 import random
 
 from settings import *
-
 chain_step = 0
 
 initialize_lock = []
@@ -18,7 +17,6 @@ state_cache ={}
 
 miners  = []
 miners_ ={}
-
 
 miners_mining  = {}
 
@@ -159,19 +157,21 @@ def who_won(miner_id, solution, chain_step, chain_id):
 			break
 
 		# someone else came before me
-		if obj['step'] > chain_step:
+		if int(obj['step']) > int(chain_step):
 			break
 	# update the chain if you won
 	if  int(obj['step']) == int(chain_step) and int(solution) == int(obj['solution']):
 		obj['step'] += 1
 		obj['winner_last'] = miner_id
-		obj['solution'] = random.randint(1,101)
-
+		obj['solution'] = random.randint(1,100)
+		# with open('results.txt','a') as f:
+		# 	f.write("SOLUTION FOUND FOR CHAIN "+str(obj['chain_id']) + " BY " + str(miner_id)+"\n")
+		# 	f.write(str(obj)+"\n")
+		# 	f.close()
 		chains[chain_id] = obj
 
 	# else get you didn't win you get winners name
 	winning_lock.pop(0)
-
 	return jsonify(data=obj)
 
 

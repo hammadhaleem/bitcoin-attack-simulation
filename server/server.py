@@ -84,7 +84,9 @@ def refresh():
 				'chain_id': i,
 				'reward' : 10,
 				'step' : 0,
-				'total_power' : 0
+				'total_power' : 0,
+				'winner_last' : -1,
+				'solution' : 10
 			}
 
 	return jsonify(data={})
@@ -150,8 +152,7 @@ def who_won(miner_id, solution, chain_step, chain_id):
 	winning_lock.append(miner_id)
 
 	while True:
-
-		obj = chain[chain_id]
+		obj = chains[chain_id]
 
 		# it my turn
 		if winning_lock[0] == miner_id:
@@ -160,14 +161,13 @@ def who_won(miner_id, solution, chain_step, chain_id):
 		# someone else came before me
 		if obj['step'] > chain_step:
 			break
-
 	# update the chain if you won
-	if  obj['step'] == chain_step and solution == obj['solution']:
+	if  int(obj['step']) == int(chain_step) and int(solution) == int(obj['solution']):
 		obj['step'] += 1
 		obj['winner_last'] = miner_id
 		obj['solution'] = random.randint(1,101)
 
-		chain[chain_id] = obj
+		chains[chain_id] = obj
 
 	# else get you didn't win you get winners name
 	winning_lock.pop(0)

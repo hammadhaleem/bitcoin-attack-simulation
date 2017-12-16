@@ -9,12 +9,13 @@ serverurl = 'http://10.89.91.27:5000' if int(sys.argv[1]) == 1 else 'http://0.0.
 completedChains = set()
 open('../server/results.txt', 'w').close()
 class Miner(threading.Thread ):
-    def __init__(self,strategy):
+    def __init__(self,internalId):
         threading.Thread.__init__(self)
         self.totalCoins = 0
+        self.internalID = internalId
         self.totalPower = rand.randint(1,100)
         self.allChains = ['C1','C2']
-        self.strategy = strategy
+        #self.strategy = strategy
         r = requests.get(serverurl+"/join/"+str(self.totalPower))
         self.ID = eval(r.text)['data']['miner_id']
         print("Hello, I am Miner "+str(self.ID))
@@ -46,7 +47,6 @@ class Miner(threading.Thread ):
             #print("Miner " + str(self.ID) + " has " + str(numberTries) + " number of Attempts on chain " + str(i+1))
             while numberTries >= 0:
                 sol = str(rand.randint(1,100))
-                #print("Trying solution "+sol)
                 r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+sol+"/"+str(val['step'])+'/'+str(val['chain_id']))
                 numberTries -= 1
                 if(eval(r.text)['data']['step'] > step):
@@ -58,12 +58,18 @@ class Miner(threading.Thread ):
 
     def run(self):
         start_time = time.time()
-        for i in range(sys.argv[3]):
+        rounds = 100
+        for i in range(rounds):
+            if self.internalID == 0:
+                with open("../server/results.txt",'a') as f:
+                    f.write("This is Info for Round " + str(i)+" which took " + str(time.time() - start_time) + " seconds:\n")
+                    for i,val in enumerate(self.allChains):
+                        f.write(str(val)+"\n")
             self.send_chain_power()
             self.do_mining()
-            if(i == 9) :
+            if(i == rounds-1) :
                 with open("../server/results.txt","a") as f:
-                    f.write("Miner " + str(self.ID) + " had Money/Power Ratio " + str(self.totalCoins/self.totalPower) + "\n")
+                    f.write("Miner " + str(self.internalID) + " has Money" + str(self.totalCoins) + "\n")
                     #f.write("Miner " + str(self.ID) + " has money " + str(self.totalCoins) + " had Power " + str(self.totalPower) + "\n")
         #print("Miner " + str(self.ID) + " finished his round in " + str(time.time() - start_time))
         #print("Miner " + str(self.ID) + " sees " + str(self.allChains))
@@ -73,5 +79,5 @@ r = requests.get(serverurl+"/refresh/")
 Miners = []
 a = time.time()
 for i in range(int(sys.argv[2])):
-    Miners.append(Miner(0))
+    Miners.append(Miner(i))
     Miners[-1].start()

@@ -1,4 +1,4 @@
-import glob , os, json , random
+import glob , os, json , random, time 
 import networkx as nx
 import shutil
 import uuid,time
@@ -243,6 +243,7 @@ def who_won(miner_id, solution, chain_step, chain_id):
 
 		# i am the winner 
 		obj['winner'] = miner_id
+		obj['time'] =  time.time()
 		# print((obj, miner_id,chain_id))
 		winners_list[chain_id].append(obj.copy())
 

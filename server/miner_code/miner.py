@@ -66,16 +66,11 @@ class Miner(threading.Thread ):
             data = eval(r.text)['data']
 
 
+            actual_sol = str(eval(r.text)['data']['solution'])
+            all_solutons = [str(rand.randint(0,max_solution_size+1)) for i in range(numberTries+1)]
+
             # if miner found the i am not on correct step skip
             if data['step'] >= step:
-
-                actual_sol = str(eval(r.text)['data']['solution'])
-
-                # minimum tries
-                # while  True and numberTries>=1:
-                    # generate all solutions
-                all_solutons = [str(rand.randint(1,max_solution_size)) for i in range(numberTries)]
-
                 if actual_sol in all_solutons:
                     # send my solution for current block
                     r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+actual_sol+"/"+str(val['step'])+'/'+str(val['chain_id']))

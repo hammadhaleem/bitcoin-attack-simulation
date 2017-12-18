@@ -39,6 +39,16 @@ for i in range(1, number_of_chains+1):
 
 	winners_list[i] = []
 
+@app.route("/send_parameters",methods=['GET,POST'])
+@app.route("/send_parameters/",methods=['GET,POST'])
+@crossdomain(origin='*')
+def receive_parameters():
+	content = eval(request.get_json(silent=True))
+	print(content)
+
+
+	return jsonify(data={})
+
 @app.route("/favicon.ico")
 def return_none():
 	return jsonify({})
@@ -215,8 +225,6 @@ def who_won(miner_id, solution, chain_step, chain_id):
 	# else get you didn't win you get winners name
 	winning_lock.pop(0)
 	return jsonify(data=obj)
-
-
 
 @app.route("/get_info_response/")
 def get_info_response(next_id=0):

@@ -3,56 +3,40 @@
         {
             "chain_id": 1,
             "reward": 10,
-            "solution": 2664,
+            "solution": 8113,
             "step": 0,
             "total_power": 0,
-            "winner": "613f142e-e3cd-11e7-be73-a0999b140701",
+            "winner": "edfa1bba-e3d3-11e7-8331-a0999b140701",
+            "winner_last": -1
+        }
+    ],
+    "2": [
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 1074,
+            "step": 0,
+            "total_power": 0,
+            "winner": "edfcc02c-e3d3-11e7-9e25-a0999b140701",
             "winner_last": -1
         },
         {
-            "chain_id": 1,
+            "chain_id": 2,
             "reward": 10,
-            "solution": 5766,
+            "solution": 5339,
             "step": 1,
             "total_power": 0,
-            "winner": "613f142e-e3cd-11e7-be73-a0999b140701",
-            "winner_last": "613f142e-e3cd-11e7-be73-a0999b140701"
+            "winner": "edfcc02c-e3d3-11e7-9e25-a0999b140701",
+            "winner_last": "edfcc02c-e3d3-11e7-9e25-a0999b140701"
         },
         {
-            "chain_id": 1,
+            "chain_id": 2,
             "reward": 10,
-            "solution": 8367,
+            "solution": 4725,
             "step": 2,
             "total_power": 0,
-            "winner": "613f142e-e3cd-11e7-be73-a0999b140701",
-            "winner_last": "613f142e-e3cd-11e7-be73-a0999b140701"
-        },
-        {
-            "chain_id": 1,
-            "reward": 10,
-            "solution": 7331,
-            "step": 3,
-            "total_power": 0,
-            "winner": "613f142e-e3cd-11e7-be73-a0999b140701",
-            "winner_last": "613f142e-e3cd-11e7-be73-a0999b140701"
-        },
-        {
-            "chain_id": 1,
-            "reward": 10,
-            "solution": 8725,
-            "step": 4,
-            "total_power": 0,
-            "winner": "613f142e-e3cd-11e7-be73-a0999b140701",
-            "winner_last": "613f142e-e3cd-11e7-be73-a0999b140701"
-        },
-        {
-            "chain_id": 1,
-            "reward": 10,
-            "solution": 7685,
-            "step": 5,
-            "total_power": 0,
-            "winner": "613f142e-e3cd-11e7-be73-a0999b140701",
-            "winner_last": "613f142e-e3cd-11e7-be73-a0999b140701"
+            "winner": "edfcc02c-e3d3-11e7-9e25-a0999b140701",
+            "winner_last": "edfcc02c-e3d3-11e7-9e25-a0999b140701"
         }
     ]
 }

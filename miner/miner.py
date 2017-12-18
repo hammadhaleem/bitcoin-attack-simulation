@@ -5,6 +5,7 @@ import time
 import asyncio, threading, sys
 import pprint as pp
 
+from settings import  * 
 serverurl = 'http://10.89.91.27:5000' if int(sys.argv[1]) == 1 else 'http://0.0.0.0:5000'
 
 completedChains = set()
@@ -36,65 +37,47 @@ class Miner(threading.Thread ):
     def send_chain_power(self):
         powerPerChain = int(self.totalPower/len(self.allChains))
         urls = []
+
         for i,val in enumerate(self.allChains):
             urls.append(serverurl+"/chain_powers/"+str(val['chain_id'])+'/'+str(powerPerChain)+'/'+str(self.ID))
 
         result = (grequests.get(u) for u in urls)
         result = [eval(a.text)['data'] for  a in grequests.map(result)]
         for i in range(len(self.allChains)):
-            # print("Miner " + str(self.ID) + " has relative power " + str(result[i]['relative_power']) + " on chain " + str(i+1))
+            print("Miner " + str(self.ID) + " has relative power " + str(result[i]['relative_power']) + " on chain " + str(i+1))
             self.allChains[i]['my_relative_power'] = result[i]['relative_power']
 
     def do_mining(self):
         for i,val in enumerate(self.allChains):
             numberTries = int(val['my_relative_power'] * 100)
             step = val['step']
-            r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+str(rand.randint(1,100))+"/"+str(val['step'])+'/'+str(val['chain_id']))
-            data = eval(r.text)
-            actual_sol = str(eval(r.text)['data']['solution'])
+            r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+str(rand.randint(1,max_solution_size))+"/"+str(step)+'/'+str(val['chain_id']))
+            data = eval(r.text)['data']
+            # if miner found the i am not on correct step skip 
+            if data['step'] == step:
 
-            if numberTries <2:
+                actual_sol = str(eval(r.text)['data']['solution'])
+
                 # minimum tries 
-                numberTries = 2 
-
-            while  True:
-                # generate all solutions 
-                if numberTries <2:
-                    numberTries = 2 
-                all_solutons = [str(rand.randint(1,100)) for i in range(numberTries)]
-                sol = all_solutons.pop()
+                # while  True and numberTries>=1: 
+                    # generate all solutions 
+                all_solutons = [str(rand.randint(1,max_solution_size)) for i in range(numberTries)]
 
                 if actual_sol in all_solutons: 
                     # send my solution for current block
                     r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+actual_sol+"/"+str(val['step'])+'/'+str(val['chain_id']))
 
-                    # confirm if i win 
-                    r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+actual_sol+"/"+str(val['step'])+'/'+str(val['chain_id']))
-
-                    if(eval(r.text)['data']['step'] >= step):
+                    if(eval(r.text)['data']['step'] > step):
                         if(str(self.ID) == eval(r.text)['data']['winner_last']):
                             self.totalCoins += eval(r.text)['data']['reward']
                         self.allChains[i] = eval(r.text)['data']
                         completedChains.add(str(eval(r.text)['data']))
-                    break
-
-            # print("Miner " + str(self.ID) + " has " + str(numberTries) + " number of Attempts on chain " + str(i+1))
-
-            # while numberTries >= 0:
-            #     sol = str(rand.randint(1,100))
-            #     r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+sol+"/"+str(val['step'])+'/'+str(val['chain_id']))
-            #     numberTries -= 1
-            #     if(eval(r.text)['data']['step'] > step):
-            #         if(str(self.ID) == eval(r.text)['data']['winner_last']):
-            #             self.totalCoins += eval(r.text)['data']['reward']
-            #         self.allChains[i] = eval(r.text)['data']
-            #         completedChains.add(str(eval(r.text)['data']))
-            #         break
+                        # break
 
     def run(self):
         start_time = time.time()
-        rounds = 100
-        for i in range(rounds):
+
+        for i in range(number_of_rounds):
             if self.internalID == 0:
                 with open("../miner/info.txt",'a+') as f:
                     f.write("This is Info for Round " + str(i)+" which took " + str(time.time() - start_time) + " seconds:\n")
@@ -116,3 +99,5 @@ a = time.time()
 for i in range(int(sys.argv[2])):
     Miners.append(Miner(i))
     Miners[-1].start()
+
+# list(map((lambda x: x.start()), Miners))

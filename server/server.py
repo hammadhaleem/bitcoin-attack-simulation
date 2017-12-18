@@ -31,7 +31,7 @@ for i in range(1, number_of_chains+1):
 			'step' : 0,
 			'total_power' : 0,
 			'winner_last' : -1,
-			'solution' : 10,
+			'solution' : random.randint(1,max_solution_size),
 			'winner' : -1
 		}
 
@@ -79,7 +79,10 @@ def ledger():
 	
 
 
-	return jsonify(data=data)
+	return jsonify(data={
+		'account': data,
+		'sequence':winners_list
+	})
 
 @app.route('/refresh/')
 @app.route('/refresh')
@@ -111,7 +114,7 @@ def refresh():
 				'step' : 0,
 				'total_power' : 0,
 				'winner_last' : -1,
-				'solution' : 10
+				'solution' : random.randint(1,max_solution_size)
 			}
 
 	return jsonify(data={})
@@ -133,7 +136,7 @@ def chain_powers(chain, current_power, miner_id):
 	current_power = int(current_power)
 	chain = int(chain)
 
-	if int(current_power) < miners_[miner_id]:
+	if int(current_power) <= miners_[miner_id]:
 		try:
 			chain_power_allocated[chain][miner_id] = current_power
 		except:
@@ -145,6 +148,7 @@ def chain_powers(chain, current_power, miner_id):
 		return_ = False
 		for i in range(1, number_of_chains+1):
 
+			# print(number_of_chains)
 			if number_of_chains == len(chain_power_allocated.keys()) and \
 				len(miners_.keys()) == len(chain_power_allocated[i].keys()):
 				return_  = True
@@ -159,6 +163,7 @@ def chain_powers(chain, current_power, miner_id):
 
 	powers = [ int(chain_info[miner]) for miner in chain_info.keys()]
 
+	print((powers,float(current_power) / sum(powers) ))
 	return jsonify(data={
 		'relative_power' : float(current_power) / sum(powers),
 		'powers' : str(powers),
@@ -198,7 +203,7 @@ def who_won(miner_id, solution, chain_step, chain_id):
 
 		obj['step'] += 1
 		obj['winner_last'] = miner_id
-		obj['solution'] = random.randint(1,100)
+		obj['solution'] = random.randint(1,max_solution_size)
 		obj['winner'] = -1
 		# with open('results.txt','a') as f:
 		# 	f.write("SOLUTION FOUND FOR CHAIN "+str(obj['chain_id']) + " BY " + str(miner_id)+"\n")

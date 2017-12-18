@@ -1,2 +1,2 @@
-number_of_chains = 2
-number_of_miners = 100
+number_of_chains = 1
+max_solution_size = 10000

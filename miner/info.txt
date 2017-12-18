@@ -1,300 +1,1000 @@
-This is Info for Round 0 which took 0.0022499561309814453 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 10, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 0}
-{'chain_id': 2, 'reward': 10, 'solution': 10, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 0}
-This is Info for Round 1 which took 0.3867359161376953 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 58, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 85, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 2 which took 0.5084738731384277 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 57, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 22, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 3 which took 0.6053938865661621 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 41, 'step': 3, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 64, 'step': 3, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 4 which took 0.6895458698272705 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 43, 'step': 4, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 1, 'step': 4, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 5 which took 0.7922370433807373 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 56, 'step': 5, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 80, 'step': 5, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 6 which took 0.9014420509338379 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 51, 'step': 6, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 69, 'step': 6, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 7 which took 0.9968428611755371 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 74, 'step': 7, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 76, 'step': 7, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 8 which took 1.1070098876953125 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 14, 'step': 8, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 42, 'step': 8, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 9 which took 1.2093098163604736 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 83, 'step': 9, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 6, 'step': 9, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 10 which took 1.3095827102661133 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 25, 'step': 10, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 42, 'step': 10, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 11 which took 1.4052457809448242 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 86, 'step': 11, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 59, 'step': 11, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 12 which took 1.498025894165039 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 75, 'step': 12, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 94, 'step': 12, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 13 which took 1.5981040000915527 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 4, 'step': 13, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 81, 'step': 13, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 14 which took 1.6939918994903564 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 99, 'step': 14, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 6, 'step': 14, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 15 which took 1.816802978515625 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 78, 'step': 15, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 65, 'step': 15, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 16 which took 1.9131550788879395 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 63, 'step': 16, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 4, 'step': 16, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 17 which took 2.0550589561462402 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 51, 'step': 17, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 99, 'step': 17, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 18 which took 2.1750447750091553 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 14, 'step': 18, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 36, 'step': 18, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 19 which took 2.2854859828948975 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 91, 'step': 19, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 79, 'step': 19, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 20 which took 2.448584794998169 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 26, 'step': 20, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 49, 'step': 20, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 21 which took 2.584563970565796 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 79, 'step': 21, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 99, 'step': 21, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 22 which took 2.6877880096435547 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 11, 'step': 22, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 28, 'step': 22, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 23 which took 2.7920219898223877 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 31, 'step': 23, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 25, 'step': 23, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 24 which took 2.9008209705352783 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 6, 'step': 24, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 69, 'step': 24, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 25 which took 3.0049867630004883 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 48, 'step': 25, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 86, 'step': 25, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 26 which took 3.1241037845611572 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 54, 'step': 26, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 48, 'step': 26, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 27 which took 3.262190103530884 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 74, 'step': 27, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 37, 'step': 27, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 28 which took 3.383654832839966 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 20, 'step': 28, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 87, 'step': 28, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 29 which took 3.47243070602417 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 75, 'step': 29, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 8, 'step': 29, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 30 which took 3.5565760135650635 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 72, 'step': 30, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 54, 'step': 30, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 31 which took 3.650499105453491 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 77, 'step': 31, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 13, 'step': 31, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 32 which took 3.7359039783477783 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 73, 'step': 32, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 42, 'step': 32, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 33 which took 3.8223958015441895 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 13, 'step': 33, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 31, 'step': 33, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 34 which took 3.9515767097473145 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 21, 'step': 34, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 2, 'step': 34, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 35 which took 4.067324876785278 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 20, 'step': 35, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 3, 'step': 35, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 36 which took 4.161060810089111 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 55, 'step': 36, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 9, 'step': 36, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 37 which took 4.246989727020264 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 69, 'step': 37, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 45, 'step': 37, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 38 which took 4.361979961395264 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 28, 'step': 38, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 69, 'step': 38, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 39 which took 4.496994972229004 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 91, 'step': 39, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 12, 'step': 39, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 40 which took 4.6193437576293945 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 23, 'step': 40, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 12, 'step': 40, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 41 which took 4.750258922576904 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 54, 'step': 41, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 32, 'step': 41, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 42 which took 4.879089832305908 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 71, 'step': 42, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 59, 'step': 42, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 43 which took 5.036592960357666 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 49, 'step': 43, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 86, 'step': 43, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 44 which took 5.183984756469727 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 57, 'step': 44, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 51, 'step': 44, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 45 which took 5.306565761566162 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 83, 'step': 45, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 37, 'step': 45, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 46 which took 5.440160036087036 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 15, 'step': 46, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 31, 'step': 46, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 47 which took 5.58731484413147 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 12, 'step': 47, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 96, 'step': 47, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 48 which took 5.731916904449463 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 78, 'step': 48, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 64, 'step': 48, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 49 which took 5.828577041625977 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 29, 'step': 49, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 9, 'step': 49, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 50 which took 5.940054893493652 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 100, 'step': 50, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 64, 'step': 50, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 51 which took 6.047918081283569 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 28, 'step': 51, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 63, 'step': 51, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 52 which took 6.215726852416992 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 67, 'step': 52, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 31, 'step': 52, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 53 which took 6.382713794708252 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 92, 'step': 53, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 94, 'step': 53, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 54 which took 6.52388596534729 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 99, 'step': 54, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 80, 'step': 54, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 55 which took 6.6329169273376465 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 39, 'step': 55, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 7, 'step': 55, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 56 which took 6.791745901107788 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 1, 'step': 56, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 88, 'step': 56, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 57 which took 6.970328092575073 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 18, 'step': 57, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 71, 'step': 57, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 58 which took 7.0966949462890625 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 25, 'step': 58, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 67, 'step': 58, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 59 which took 7.212967872619629 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 80, 'step': 59, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 98, 'step': 59, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 60 which took 7.33019495010376 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 95, 'step': 60, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 15, 'step': 60, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 61 which took 7.477132081985474 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 15, 'step': 61, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 50, 'step': 61, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 62 which took 7.642987966537476 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 93, 'step': 62, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 58, 'step': 62, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 63 which took 7.772735834121704 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 30, 'step': 63, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 90, 'step': 63, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 64 which took 7.923667907714844 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 31, 'step': 64, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 79, 'step': 64, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 65 which took 8.05784797668457 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 74, 'step': 65, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 61, 'step': 65, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 66 which took 8.203800678253174 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 85, 'step': 66, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 28, 'step': 66, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 67 which took 8.341463088989258 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 52, 'step': 67, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 16, 'step': 67, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 68 which took 8.511758804321289 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 10, 'step': 68, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 68, 'step': 68, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 69 which took 8.641850709915161 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 52, 'step': 69, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 48, 'step': 69, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 70 which took 8.74942684173584 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 92, 'step': 70, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 12, 'step': 70, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 71 which took 8.836920738220215 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 30, 'step': 71, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 72, 'step': 71, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 72 which took 8.956105947494507 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 76, 'step': 72, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 92, 'step': 72, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 73 which took 9.092803716659546 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 9, 'step': 73, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 100, 'step': 73, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 74 which took 9.184534072875977 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 60, 'step': 74, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 21, 'step': 74, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 75 which took 9.278059959411621 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 71, 'step': 75, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 66, 'step': 75, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 76 which took 9.37407374382019 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 47, 'step': 76, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 26, 'step': 76, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 77 which took 9.519402027130127 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 16, 'step': 77, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 65, 'step': 77, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 78 which took 9.648758888244629 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 53, 'step': 78, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 49, 'step': 78, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 79 which took 9.736981868743896 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 82, 'step': 79, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 55, 'step': 79, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 80 which took 9.82495379447937 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 46, 'step': 80, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 71, 'step': 80, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 81 which took 9.919358015060425 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 39, 'step': 81, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 73, 'step': 81, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 82 which took 10.025527954101562 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 78, 'step': 82, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 64, 'step': 82, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 83 which took 10.168447971343994 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 75, 'step': 83, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 43, 'step': 83, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 84 which took 10.293808937072754 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 71, 'step': 84, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 76, 'step': 84, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 85 which took 10.403982877731323 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 92, 'step': 85, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 66, 'step': 85, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 86 which took 10.501200914382935 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 15, 'step': 86, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 3, 'step': 86, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 87 which took 10.642099857330322 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 67, 'step': 87, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 84, 'step': 87, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 88 which took 10.822500705718994 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 44, 'step': 88, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 97, 'step': 88, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 89 which took 10.95346999168396 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 96, 'step': 89, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 38, 'step': 89, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 90 which took 11.098984956741333 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 6, 'step': 90, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 29, 'step': 90, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 91 which took 11.234556913375854 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 72, 'step': 91, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 99, 'step': 91, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 92 which took 11.401030778884888 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 57, 'step': 92, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 82, 'step': 92, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 93 which took 11.538638830184937 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 83, 'step': 93, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 58, 'step': 93, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 94 which took 11.672515869140625 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 90, 'step': 94, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 63, 'step': 94, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-This is Info for Round 95 which took 11.839768886566162 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 45, 'step': 95, 'total_power': 0, 'winner': -1, 'winner_last': '8d568a92-e3b9-11e7-a3ee-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 46, 'step': 95, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 96 which took 11.996168851852417 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 30, 'step': 96, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 55, 'step': 96, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 97 which took 12.13656497001648 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 43, 'step': 97, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 56, 'step': 97, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 98 which took 12.256677865982056 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 34, 'step': 98, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 96, 'step': 98, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-This is Info for Round 99 which took 12.350939750671387 seconds:
-{'chain_id': 1, 'reward': 10, 'solution': 10, 'step': 99, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
-{'chain_id': 2, 'reward': 10, 'solution': 71, 'step': 99, 'total_power': 0, 'winner': -1, 'winner_last': '8d5b8986-e3b9-11e7-9014-a0999b140701'}
+This is Info for Round 0 which took 0.0001342296600341797 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 0}
+This is Info for Round 1 which took 0.011358976364135742 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 2 which took 0.02350902557373047 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 3 which took 0.04350423812866211 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 4 which took 0.05909299850463867 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 5 which took 0.07305121421813965 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 6 which took 0.09631705284118652 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 7 which took 0.11173200607299805 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 8 which took 0.1250760555267334 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 9 which took 0.14051413536071777 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 10 which took 0.1623821258544922 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 11 which took 0.17806005477905273 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 12 which took 0.2084941864013672 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 13 which took 0.22465896606445312 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 14 which took 0.24056124687194824 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 15 which took 0.25468897819519043 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 16 which took 0.2767221927642822 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 17 which took 0.30212926864624023 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 18 which took 0.3179051876068115 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 19 which took 0.33963608741760254 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 20 which took 0.3567171096801758 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 21 which took 0.3671863079071045 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 22 which took 0.38135409355163574 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 23 which took 0.4018430709838867 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 24 which took 0.41806697845458984 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 6329, 'step': 0, 'total_power': 0, 'winner_last': -1, 'my_relative_power': 1.0}
+This is Info for Round 25 which took 0.44502711296081543 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701'}
+This is Info for Round 26 which took 0.46245503425598145 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 27 which took 0.4811711311340332 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 28 which took 0.507127046585083 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 29 which took 0.5222461223602295 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 30 which took 0.5410661697387695 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 31 which took 0.5598390102386475 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 32 which took 0.5732653141021729 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 33 which took 0.5869672298431396 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 34 which took 0.609255313873291 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 35 which took 0.6248672008514404 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 36 which took 0.645806074142456 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 37 which took 0.6622600555419922 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 38 which took 0.6819860935211182 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 39 which took 0.7043111324310303 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 40 which took 0.7214100360870361 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 41 which took 0.7417330741882324 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 42 which took 0.7626311779022217 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 43 which took 0.7841601371765137 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 44 which took 0.8015251159667969 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 45 which took 0.8226292133331299 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 46 which took 0.8429551124572754 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 47 which took 0.8605201244354248 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 48 which took 0.8813221454620361 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 49 which took 0.9066581726074219 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 50 which took 0.9227063655853271 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 51 which took 0.9400091171264648 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 52 which took 0.9563660621643066 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 53 which took 0.9669911861419678 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 54 which took 0.9865882396697998 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 55 which took 1.018787145614624 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 56 which took 1.0483851432800293 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 57 which took 1.0805211067199707 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 58 which took 1.1132721900939941 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 59 which took 1.131636142730713 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 60 which took 1.1464729309082031 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 61 which took 1.1663930416107178 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 62 which took 1.1853761672973633 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 63 which took 1.2042312622070312 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 64 which took 1.2280230522155762 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 65 which took 1.241772174835205 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 66 which took 1.2626240253448486 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 67 which took 1.2804579734802246 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 68 which took 1.3041741847991943 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 69 which took 1.3267099857330322 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 70 which took 1.3435211181640625 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 71 which took 1.3614401817321777 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 72 which took 1.383847951889038 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 73 which took 1.4027080535888672 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 74 which took 1.4268412590026855 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 75 which took 1.4398550987243652 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 76 which took 1.456233024597168 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 77 which took 1.4790871143341064 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 78 which took 1.4985690116882324 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 79 which took 1.5630269050598145 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 80 which took 1.5857973098754883 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 81 which took 1.6092641353607178 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 82 which took 1.631162166595459 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 83 which took 1.6471991539001465 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 84 which took 1.6616640090942383 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 85 which took 1.696969985961914 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 86 which took 1.7172832489013672 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 87 which took 1.7374870777130127 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 88 which took 1.7557330131530762 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 89 which took 1.774996042251587 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 90 which took 1.79233717918396 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 91 which took 1.8203051090240479 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 92 which took 1.8442492485046387 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 93 which took 1.8661539554595947 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 94 which took 1.8833160400390625 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 95 which took 1.90946626663208 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 96 which took 1.9271831512451172 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 97 which took 1.9526829719543457 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 98 which took 1.9702401161193848 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 99 which took 1.9974939823150635 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 100 which took 2.0192360877990723 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 101 which took 2.039546251296997 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 102 which took 2.0626680850982666 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 103 which took 2.0833401679992676 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 104 which took 2.111682176589966 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 105 which took 2.1316580772399902 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 106 which took 2.1466500759124756 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 107 which took 2.1667721271514893 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 108 which took 2.1824090480804443 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 109 which took 2.199160099029541 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 110 which took 2.2236552238464355 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 111 which took 2.2379860877990723 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 112 which took 2.25622820854187 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 113 which took 2.269005060195923 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 114 which took 2.287419319152832 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 115 which took 2.309018135070801 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 116 which took 2.3255932331085205 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 117 which took 2.345458984375 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 118 which took 2.365347146987915 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 119 which took 2.3866260051727295 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 120 which took 2.403913974761963 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 121 which took 2.425326108932495 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 122 which took 2.440061092376709 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 123 which took 2.461475133895874 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 124 which took 2.4772732257843018 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 125 which took 2.491547107696533 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 126 which took 2.508815288543701 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 127 which took 2.5275862216949463 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 128 which took 2.5415313243865967 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 129 which took 2.5692172050476074 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 130 which took 2.5851142406463623 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 131 which took 2.6048061847686768 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 132 which took 2.6281332969665527 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 133 which took 2.643698215484619 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 134 which took 2.665856122970581 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 135 which took 2.6785731315612793 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 136 which took 2.692732334136963 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 137 which took 2.716454267501831 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 138 which took 2.7326059341430664 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 139 which took 2.753474235534668 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 140 which took 2.782494068145752 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 141 which took 2.834954023361206 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 142 which took 2.8498661518096924 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 143 which took 2.8660852909088135 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 144 which took 2.881511926651001 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 145 which took 2.9074501991271973 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 146 which took 2.923051118850708 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 147 which took 2.937169313430786 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 148 which took 2.954559087753296 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 149 which took 2.9730710983276367 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 150 which took 2.990171194076538 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 151 which took 3.005413293838501 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 152 which took 3.02449893951416 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 153 which took 3.037384033203125 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 154 which took 3.053591012954712 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 155 which took 3.076414108276367 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 156 which took 3.090564250946045 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 157 which took 3.1073551177978516 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 158 which took 3.1253321170806885 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 159 which took 3.1367571353912354 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 160 which took 3.151655912399292 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 161 which took 3.1674911975860596 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 162 which took 3.1846630573272705 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 163 which took 3.201288938522339 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 164 which took 3.2162721157073975 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 165 which took 3.2325892448425293 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 166 which took 3.248338222503662 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 167 which took 3.259810209274292 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 168 which took 3.2756431102752686 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 169 which took 3.2962961196899414 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 170 which took 3.313282012939453 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 171 which took 3.330071210861206 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 172 which took 3.345668077468872 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 173 which took 3.3626911640167236 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 174 which took 3.3774189949035645 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 175 which took 3.393057107925415 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 176 which took 3.4088692665100098 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 177 which took 3.4285051822662354 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 178 which took 3.4453461170196533 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 179 which took 3.465315103530884 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 180 which took 3.4777841567993164 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 181 which took 3.4916532039642334 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 182 which took 3.5123672485351562 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 183 which took 3.5263521671295166 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 184 which took 3.543774127960205 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 185 which took 3.558504104614258 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 186 which took 3.576810121536255 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 187 which took 3.590514898300171 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 188 which took 3.6066832542419434 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 189 which took 3.6225171089172363 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 190 which took 3.6340370178222656 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 191 which took 3.6481220722198486 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 192 which took 3.6648242473602295 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 193 which took 3.6803390979766846 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 194 which took 3.6963491439819336 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 195 which took 3.712376117706299 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 196 which took 3.728241205215454 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 197 which took 3.7419252395629883 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 198 which took 3.756547212600708 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 199 which took 3.770480155944824 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 200 which took 3.7864811420440674 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 201 which took 3.8029401302337646 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 202 which took 3.8171651363372803 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 203 which took 3.8385941982269287 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 204 which took 3.8529772758483887 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 205 which took 3.8645172119140625 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 206 which took 3.8769211769104004 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 207 which took 3.8933849334716797 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 208 which took 3.908952236175537 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 209 which took 3.9227960109710693 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 210 which took 3.9387640953063965 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 211 which took 3.9499902725219727 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 212 which took 3.9646620750427246 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 213 which took 3.979973077774048 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 214 which took 3.9942281246185303 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 215 which took 4.009109020233154 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 216 which took 4.026365041732788 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 217 which took 4.0396952629089355 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 218 which took 4.055880069732666 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 219 which took 4.0767340660095215 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 220 which took 4.090395212173462 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 221 which took 4.105490207672119 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 222 which took 4.122287273406982 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 223 which took 4.134002923965454 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 224 which took 4.148864030838013 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 225 which took 4.166875123977661 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 226 which took 4.185303211212158 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 227 which took 4.200075149536133 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 228 which took 4.2175681591033936 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 229 which took 4.23471212387085 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 230 which took 4.2500951290130615 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 231 which took 4.262315988540649 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 232 which took 4.280078172683716 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 233 which took 4.29821515083313 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 234 which took 4.323614120483398 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 235 which took 4.347181081771851 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 236 which took 4.366218090057373 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 237 which took 4.380112171173096 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 238 which took 4.395776033401489 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 239 which took 4.422773122787476 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 240 which took 4.434484958648682 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 241 which took 4.449856996536255 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 242 which took 4.467818021774292 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 243 which took 4.4894022941589355 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 244 which took 4.523380994796753 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 245 which took 4.546057939529419 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 246 which took 4.567659139633179 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 247 which took 4.587476968765259 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 248 which took 4.6164140701293945 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 249 which took 4.633973121643066 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 250 which took 4.6551642417907715 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 251 which took 4.674643039703369 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 252 which took 4.688474178314209 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 253 which took 4.712728023529053 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 254 which took 4.7334630489349365 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 255 which took 4.753648281097412 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 256 which took 4.772667169570923 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 257 which took 4.792298078536987 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 258 which took 4.821425199508667 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 259 which took 4.842013359069824 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 260 which took 4.8615381717681885 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 261 which took 4.877543210983276 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 262 which took 4.890856981277466 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 263 which took 4.9176671504974365 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 264 which took 4.935856103897095 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 265 which took 4.9585280418396 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 266 which took 4.980269193649292 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 267 which took 5.0190589427948 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 268 which took 5.044114351272583 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 269 which took 5.06623101234436 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 270 which took 5.084841966629028 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 271 which took 5.107054233551025 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 272 which took 5.126861095428467 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 273 which took 5.140455961227417 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 274 which took 5.165873289108276 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 275 which took 5.183544158935547 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 276 which took 5.204689264297485 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 277 which took 5.224002122879028 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 278 which took 5.242063283920288 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 279 which took 5.262610197067261 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 280 which took 5.281856060028076 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 281 which took 5.297430038452148 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 282 which took 5.320508241653442 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 283 which took 5.3365302085876465 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 284 which took 5.352197170257568 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 285 which took 5.36781120300293 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 286 which took 5.38959813117981 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 287 which took 5.4019482135772705 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 288 which took 5.418787240982056 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 289 which took 5.435448169708252 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 290 which took 5.447136163711548 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 291 which took 5.466909170150757 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 292 which took 5.486932992935181 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 293 which took 5.508542060852051 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 294 which took 5.529883146286011 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 295 which took 5.548246145248413 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 296 which took 5.5600152015686035 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 297 which took 5.581661224365234 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 298 which took 5.602621078491211 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 299 which took 5.621160984039307 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 300 which took 5.6373209953308105 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 301 which took 5.653064966201782 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 302 which took 5.667777061462402 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 303 which took 5.683610200881958 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 304 which took 5.695285081863403 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 305 which took 5.713804006576538 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 306 which took 5.735303163528442 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 307 which took 5.7534379959106445 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 308 which took 5.77121114730835 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 309 which took 5.793189287185669 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 310 which took 5.816436052322388 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 311 which took 5.831521034240723 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 312 which took 5.857937335968018 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 313 which took 5.872951030731201 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 314 which took 5.886007070541382 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 315 which took 5.911342144012451 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 316 which took 5.930816173553467 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 317 which took 5.941198110580444 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 318 which took 5.957492113113403 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 319 which took 5.981166124343872 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 320 which took 5.998968124389648 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 321 which took 6.016446113586426 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 322 which took 6.03894305229187 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 323 which took 6.055775165557861 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 324 which took 6.068251132965088 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 325 which took 6.083407163619995 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 326 which took 6.103292226791382 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 327 which took 6.126925230026245 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 328 which took 6.140222072601318 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 329 which took 6.1586833000183105 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 330 which took 6.169428110122681 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 331 which took 6.185595273971558 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 332 which took 6.1981329917907715 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 333 which took 6.219393014907837 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 334 which took 6.235736131668091 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 335 which took 6.2569169998168945 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 336 which took 6.2731499671936035 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 337 which took 6.28577995300293 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 338 which took 6.299325942993164 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 339 which took 6.324579238891602 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 340 which took 6.341109991073608 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 341 which took 6.355258226394653 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 342 which took 6.374238014221191 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 343 which took 6.396068096160889 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 344 which took 6.412535190582275 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 345 which took 6.432519912719727 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 346 which took 6.450254201889038 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 347 which took 6.462798118591309 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 348 which took 6.476711273193359 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 349 which took 6.490583181381226 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 350 which took 6.513629913330078 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 351 which took 6.53233528137207 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 352 which took 6.5534961223602295 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 353 which took 6.573306083679199 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 354 which took 6.5908238887786865 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 355 which took 6.606773138046265 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 356 which took 6.634486198425293 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 357 which took 6.648977279663086 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 358 which took 6.664078235626221 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 359 which took 6.690860033035278 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 360 which took 6.7066450119018555 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 361 which took 6.72710108757019 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 362 which took 6.766833305358887 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 363 which took 6.784849166870117 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 364 which took 6.802821159362793 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 365 which took 6.825483083724976 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 366 which took 6.840195178985596 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 367 which took 6.86368727684021 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 368 which took 6.878262996673584 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 369 which took 6.890419960021973 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 370 which took 6.903455972671509 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 371 which took 6.9220871925354 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 372 which took 6.934820175170898 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 373 which took 6.950750112533569 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 374 which took 6.970564126968384 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 375 which took 6.985429048538208 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 376 which took 7.003130197525024 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 377 which took 7.025269985198975 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 7517, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 378 which took 7.051013231277466 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701'}
+This is Info for Round 379 which took 7.066221237182617 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 380 which took 7.087002277374268 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 381 which took 7.118782997131348 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 382 which took 7.138370037078857 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 383 which took 7.151642084121704 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 384 which took 7.165846109390259 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 385 which took 7.186310291290283 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 386 which took 7.2014241218566895 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 387 which took 7.2188720703125 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 388 which took 7.23232102394104 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 389 which took 7.251497030258179 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 390 which took 7.267331123352051 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 391 which took 7.281370162963867 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 392 which took 7.297905206680298 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 393 which took 7.328066110610962 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 394 which took 7.34366512298584 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 395 which took 7.357758045196533 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 396 which took 7.372957944869995 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 397 which took 7.385609149932861 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 398 which took 7.402423143386841 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 399 which took 7.426779270172119 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 400 which took 7.446949243545532 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 401 which took 7.468584060668945 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 402 which took 7.485467195510864 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 403 which took 7.498338222503662 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 404 which took 7.512655258178711 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 405 which took 7.535805940628052 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 406 which took 7.5594329833984375 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 407 which took 7.577252149581909 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 408 which took 7.58818507194519 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 409 which took 7.61695408821106 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 410 which took 7.638615131378174 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 411 which took 7.655154228210449 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 412 which took 7.67962121963501 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 413 which took 7.693157196044922 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 414 which took 7.70759129524231 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 415 which took 7.7293701171875 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 416 which took 7.747560024261475 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 417 which took 7.773270130157471 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 418 which took 7.788668155670166 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 419 which took 7.804979085922241 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 420 which took 7.824340105056763 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 421 which took 7.847758054733276 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 422 which took 7.8612260818481445 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 423 which took 7.883690118789673 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 424 which took 7.9032509326934814 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 425 which took 7.918452978134155 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 426 which took 7.943126201629639 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 427 which took 7.9667980670928955 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 428 which took 7.9876251220703125 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 429 which took 8.007339000701904 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 430 which took 8.027892112731934 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 431 which took 8.043280124664307 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 432 which took 8.063173294067383 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 433 which took 8.076024055480957 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 434 which took 8.090801239013672 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 435 which took 8.105896949768066 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 436 which took 8.12441611289978 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 437 which took 8.140542984008789 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 438 which took 8.154311895370483 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 439 which took 8.17920732498169 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 440 which took 8.195728302001953 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 441 which took 8.209809303283691 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 442 which took 8.235782146453857 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 443 which took 8.252888202667236 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 444 which took 8.267121315002441 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 445 which took 8.290460348129272 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 446 which took 8.305854082107544 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 447 which took 8.31924319267273 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 448 which took 8.340342998504639 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 449 which took 8.358817100524902 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 450 which took 8.370985984802246 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 451 which took 8.389266967773438 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 452 which took 8.409361124038696 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 453 which took 8.431997060775757 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 454 which took 8.448464155197144 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 455 which took 8.468826293945312 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 456 which took 8.48789095878601 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 457 which took 8.502674341201782 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 458 which took 8.522654056549072 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 459 which took 8.541751146316528 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 460 which took 8.564208269119263 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 461 which took 8.579126119613647 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 462 which took 8.596761226654053 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 463 which took 8.608599185943604 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 464 which took 8.63344120979309 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 465 which took 8.656666278839111 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 466 which took 8.675403118133545 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 467 which took 8.701221227645874 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 468 which took 8.715253114700317 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 469 which took 8.738250017166138 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 470 which took 8.752580165863037 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 471 which took 8.769897937774658 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 472 which took 8.78670620918274 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 473 which took 8.798941373825073 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 474 which took 8.812300205230713 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 475 which took 8.832070112228394 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 476 which took 8.846184968948364 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 477 which took 8.865634202957153 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 478 which took 8.888211011886597 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 479 which took 8.906749963760376 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 480 which took 8.920881271362305 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 481 which took 8.94320797920227 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 482 which took 8.963584184646606 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 483 which took 8.981870174407959 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 484 which took 8.998066902160645 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 485 which took 9.014283180236816 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 486 which took 9.031514167785645 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 487 which took 9.051038980484009 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 488 which took 9.067387104034424 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 489 which took 9.07874608039856 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 490 which took 9.098231077194214 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 491 which took 9.111708164215088 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 492 which took 9.13321328163147 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 493 which took 9.149801015853882 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 494 which took 9.165728092193604 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 495 which took 9.179815292358398 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 496 which took 9.203984260559082 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 497 which took 9.220221996307373 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 498 which took 9.235089302062988 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}
+This is Info for Round 499 which took 9.249425172805786 seconds:
+{'chain_id': 1, 'reward': 10, 'solution': 3698, 'step': 2, 'total_power': 0, 'winner': -1, 'winner_last': '2279eacc-e3c1-11e7-81c0-a0999b140701', 'my_relative_power': 1.0}

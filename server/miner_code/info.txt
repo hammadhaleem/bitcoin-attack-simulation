@@ -1,0 +1,9 @@
+This is Info for block 0 which took 1.0 seconds.
+{'chain_id': 1, 'reward': 10, 'solution': 230, 'step': 0, 'total_power': 0, 'winner': -1, 'winner_last': -1, 'my_relative_power': 0.26666666666666666}
+{'chain_id': 2, 'reward': 10, 'solution': 352, 'step': 0, 'total_power': 0, 'winner': -1, 'winner_last': -1, 'my_relative_power': 0.26666666666666666}
+This is Info for block 1 which took 0.94 seconds.
+{'chain_id': 1, 'reward': 10, 'solution': 230, 'step': 0, 'total_power': 0, 'winner': -1, 'winner_last': -1, 'my_relative_power': 0.26666666666666666}
+{'chain_id': 2, 'reward': 10, 'solution': 352, 'step': 0, 'total_power': 0, 'winner': -1, 'winner_last': -1, 'my_relative_power': 0.26666666666666666}
+This is Info for block 2 which took 0.04 seconds.
+{'chain_id': 1, 'reward': 10, 'solution': 230, 'step': 0, 'total_power': 0, 'winner': -1, 'winner_last': -1, 'my_relative_power': 0.26666666666666666}
+{'chain_id': 2, 'reward': 10, 'solution': 352, 'step': 0, 'total_power': 0, 'winner': -1, 'winner_last': -1, 'my_relative_power': 0.26666666666666666}

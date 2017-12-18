@@ -3,13 +3,19 @@ import networkx as nx
 import shutil
 import uuid,time
 import random
+import requests
 
 from flask import jsonify
 from flask import Flask
+from flask import request
 
+from subprocess import call
 
-from settings import *
 from server import *
+
+number_of_chains = 2
+max_solution_size = 1000
+serverurl = 'http://0.0.0.0:5000' 
 
 chain_step = 0
 
@@ -26,6 +32,7 @@ miners_mining  = {}
 chain_power_allocated = {}
 chains = {}
 winners_list = {}
+
 for i in range(1, number_of_chains+1):
 	chains[i] = {
 			'chain_id': i,
@@ -39,15 +46,38 @@ for i in range(1, number_of_chains+1):
 
 	winners_list[i] = []
 
-@app.route("/send_parameters",methods=['GET,POST'])
-@app.route("/send_parameters/",methods=['GET,POST'])
-@crossdomain(origin='*')
+
+@app.route("/send_parameters/", methods=['GET', 'POST'])
+@app.route("/send_parameters", methods=['GET', 'POST'])
 def receive_parameters():
-	content = eval(request.get_json(silent=True))
-	print(content)
+	r = requests.get(serverurl+"/refresh/")
 
+	data_rec  = request.form
+	chains_rec = int(data_rec['Chains'])
+	blocks_rec  = int(data_rec['Blocks'])
+	miners_rec  = int(data_rec['Miners'])
 
-	return jsonify(data={})
+	global number_of_chains
+	number_of_chains = chains_rec
+
+	for i in range(1, number_of_chains+1):
+		chains[i] = {
+			'chain_id': i,
+			'reward' : 10,
+			'step' : 0,
+			'total_power' : 0,
+			'winner_last' : -1,
+			'solution' : random.randint(1,max_solution_size),
+			'winner' : -1
+		}
+
+		winners_list[i] = []
+
+	stri = "python miner_code/miner.py {} {}".format( str(blocks_rec), str(miners_rec))
+	os.system(stri)
+
+	return jsonify(data="true")
+
 
 @app.route("/favicon.ico")
 def return_none():
@@ -95,6 +125,9 @@ def ledger():
 @app.route('/refresh')
 def refresh():
 	# time.sleep(10)
+	global number_of_chains
+	number_of_chains = 2 
+
 	while miners:
 		miners.pop()
 
@@ -113,6 +146,11 @@ def refresh():
 	s=set(winners_list.keys())
 	for i in s:
 		winners_list[i]=[]
+
+	s=set(chains.keys())
+	for i in s:
+		del chains[i] 
+
 
 	for i in range(1, number_of_chains+1):
 		chains[i] = {

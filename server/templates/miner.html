@@ -21,12 +21,16 @@
 </body>
 <script>
 function sendParameters() {
-  $.post("http://10.89.91.27:5000/send_parameters", {
+  data = {
     'Chains': parseInt($("#Chains").val()),
     'Miners': parseInt($("#Miners").val()),
     'Blocks': parseInt($("#Blocks").val())
-  }, function(result) {
-    startSimulation()
+  };
+
+  console.log(data);
+  $.post("http://localhost:5000/send_parameters", data, function(result) {
+    console.log("b")
+    // startSimulation()
   })
 }
 
@@ -36,7 +40,7 @@ function startSimulation() {
     $.post("/ledger")
     if (i === 5) clearInterval(timer);
     console.log('post-interval'); //this will still run after clearing
-  }, 200);
+  }, 500);
 }
 
 

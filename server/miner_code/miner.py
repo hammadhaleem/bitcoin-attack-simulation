@@ -133,6 +133,8 @@ def run_miners(blocks, miners):
     a = time.time()
     for i in range(miners):
         Miners.append(Miner(i, blocks))
-        Miners[-1].start()
+    
+    for m in  Miners:
+        m.start()
 
 run_miners(blocks=int(sys.argv[1]), miners=int(sys.argv[2]))

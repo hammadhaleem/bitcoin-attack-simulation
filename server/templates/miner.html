@@ -14,10 +14,15 @@
 
 <body>
    <h1>ChainAttacker:Blockchain Simulation System</h1>
-   <input type='number' placeholder=2 id='Chains'> # Chains
-   <input type='number' placeholder=10 id='Miners'> # Miners
-   <input type='number' placeholder=30 id='Blocks'> # Solved Blocks
+   <input type='number' placeholder=2 value = 1 id='Chains'> # Chains
+   <input type='number' placeholder=10 value = 1 id='Miners'> # Miners
+   <input type='number' placeholder=30 value = 1 id='Blocks'> # Solved Blocks
    <input type='submit' onclick='sendParameters()'>
+   <br><br><br><br>
+   <div id='Ledger'>
+     <table id='Account' style="border-collapse: separate; border-spacing: 10px;">
+     </table>
+   </div>
 </body>
 <script>
 function sendParameters() {
@@ -29,18 +34,30 @@ function sendParameters() {
 
   console.log(data);
   $.post("http://localhost:5000/send_parameters", data, function(result) {
-    console.log("b")
-    // startSimulation()
+    startSimulation()
   })
 }
 
 function startSimulation() {
-  var i = 0;
-  var timer = setInterval(function() {
-    $.post("/ledger")
-    if (i === 5) clearInterval(timer);
-    console.log('post-interval'); //this will still run after clearing
-  }, 500);
+  $.get('http://localhost:5000/ledger',function(result) {
+    accountInfo = eval(result)['data']['account']
+    sequenceInfo = eval(result)['data']['sequence']
+    //$("#Ledger").empty().append(JSON.stringify(sequenceInfo))
+    // Account Table
+    $("#Account").empty().append("<tr><th>ID</th><th>Chain</th><th> Money </th> <th> Power </th></tr>")
+    for (var i in accountInfo) {
+      ids = Object.keys(accountInfo[i])
+      for(var j = 0; j < ids.length; j++) {
+        $("#Account").append("<tr cellpadding='5'>")
+        $("#Account").append("<td>"+ids[j] + "     </td>")
+        $("#Account").append("<td>"+i+"</td>")
+        $("#Account").append("<td>"+accountInfo[i][ids[j]]['coins'] + "</td>")
+        $("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
+        $("#Account").append("</tr>")
+      }
+    }
+
+  })
 }
 
 

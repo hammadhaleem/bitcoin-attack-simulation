@@ -21,7 +21,7 @@ class Miner(threading.Thread ):
         threading.Thread.__init__(self)
         self.totalCoins = 0
         self.internalID = internalId
-        self.totalPower = rand.randint(90,100)
+        self.totalPower = rand.randint(90,100) #Why so high?
         self.allChains = ['C1','C2']
         self.all_blocks = {}
         self.max_block_count = blocks
@@ -131,7 +131,7 @@ def run_miners(blocks, miners):
     a = time.time()
     for i in range(miners):
         Miners.append(Miner(i, blocks))
-    
+
     for m in  Miners:
         m.start()
 

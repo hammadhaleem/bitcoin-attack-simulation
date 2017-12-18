@@ -1,4 +1,4 @@
-import glob , os, json , random, time 
+import glob , os, json , random, time
 import networkx as nx
 import shutil
 import uuid,time
@@ -16,7 +16,7 @@ from server import *
 number_of_chains = 2
 max_solution_size = 100
 
-serverurl = 'http://0.0.0.0:5000' 
+serverurl = 'http://0.0.0.0:5000'
 
 chain_step = 0
 
@@ -97,7 +97,7 @@ def return_chains():
 @app.route("/get_all_miners")
 def return_miner_info():
 	return jsonify(data={
-		'miners' : miners_, 
+		'miners' : miners_,
 		'all_joined_miners':len(miners_.keys())
 	})
 
@@ -114,7 +114,7 @@ def ledger():
 				data[k][i['winner']] ={}
 				data[k][i['winner']]['coins'] = i['reward']
 				data[k][i['winner']]['power'] = miners_[i['winner']]
-	
+
 
 
 	return jsonify(data={
@@ -127,7 +127,7 @@ def ledger():
 def refresh():
 	# time.sleep(10)
 	global number_of_chains
-	number_of_chains = 2 
+	number_of_chains = 1
 
 	while miners:
 		miners.pop()
@@ -150,7 +150,7 @@ def refresh():
 
 	s=set(chains.keys())
 	for i in s:
-		del chains[i] 
+		del chains[i]
 
 
 	for i in range(1, number_of_chains+1):
@@ -181,7 +181,7 @@ def discover_chains():
 def chain_powers(chain, current_power, miner_id):
 	current_power = int(current_power)
 	chain = int(chain)
-
+	print("In chain power ",int(current_power)," ",miners_[miner_id])
 	if int(current_power) <= miners_[miner_id]:
 		try:
 			chain_power_allocated[chain][miner_id] = current_power
@@ -194,13 +194,12 @@ def chain_powers(chain, current_power, miner_id):
 		return_ = False
 		for i in range(1, number_of_chains+1):
 
-			# print(number_of_chains)
+			print(number_of_chains," ",len(chain_power_allocated.keys()))
 			if number_of_chains == len(chain_power_allocated.keys()) and \
 				len(miners_.keys()) == len(chain_power_allocated[i].keys()):
 				return_  = True
 			else:
 				return_ = False
-
 		if return_ == True:
 			break
 
@@ -236,13 +235,13 @@ def who_won(miner_id, solution, chain_step, chain_id):
 		if int(obj['step']) > int(chain_step):
 			break
 
-	# its my turn 
+	# its my turn
 	obj = chains[chain_id]
 
 	# update the chain if you won
 	if  int(obj['step']) == int(chain_step) and int(solution) == int(obj['solution']):
 
-		# i am the winner 
+		# i am the winner
 		obj['winner'] = miner_id
 		obj['time'] =  time.time()
 		# print((obj, miner_id,chain_id))

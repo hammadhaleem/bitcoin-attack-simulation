@@ -87,7 +87,7 @@ class Miner(threading.Thread):
             else:
                 self.all_blocks[str(i+1)][int(data['step'])] = 1
 
-    # This is the parallel loop
+    #This is the threading loop
     def run(self):
         start_time = time.time()
 

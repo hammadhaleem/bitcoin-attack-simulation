@@ -3,204 +3,1874 @@
         {
             "chain_id": 1,
             "reward": 10,
-            "solution": 234,
+            "solution": 3,
             "step": 0,
-            "time": 1513601981.957493,
+            "time": 1513605153.453779,
             "total_power": 0,
-            "winner": "4fafbec2-e3f3-11e7-9ca6-a0999b140701",
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
             "winner_last": -1
         },
         {
             "chain_id": 1,
             "reward": 10,
-            "solution": 527,
+            "solution": 3,
             "step": 1,
-            "time": 1513601983.880267,
+            "time": 1513605153.917769,
             "total_power": 0,
-            "winner": "4fafbec2-e3f3-11e7-9ca6-a0999b140701",
-            "winner_last": "4fafbec2-e3f3-11e7-9ca6-a0999b140701"
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
         },
         {
             "chain_id": 1,
             "reward": 10,
-            "solution": 943,
+            "solution": 3,
             "step": 2,
-            "time": 1513601985.105084,
+            "time": 1513605154.1722429,
             "total_power": 0,
-            "winner": "4fafbec2-e3f3-11e7-9ca6-a0999b140701",
-            "winner_last": "4fafbec2-e3f3-11e7-9ca6-a0999b140701"
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
         },
         {
             "chain_id": 1,
             "reward": 10,
-            "solution": 596,
+            "solution": 1,
             "step": 3,
-            "time": 1513601986.022333,
+            "time": 1513605154.96481,
             "total_power": 0,
-            "winner": "4fafbec2-e3f3-11e7-9ca6-a0999b140701",
-            "winner_last": "4fafbec2-e3f3-11e7-9ca6-a0999b140701"
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
         },
         {
             "chain_id": 1,
             "reward": 10,
-            "solution": 262,
+            "solution": 3,
             "step": 4,
-            "time": 1513601991.789449,
+            "time": 1513605155.296907,
             "total_power": 0,
-            "winner": "4fafbec2-e3f3-11e7-9ca6-a0999b140701",
-            "winner_last": "4fafbec2-e3f3-11e7-9ca6-a0999b140701"
+            "winner": "aff86494-e3fa-11e7-85e0-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 5,
+            "time": 1513605155.7198982,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff86494-e3fa-11e7-85e0-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 6,
+            "time": 1513605156.169854,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 4,
+            "step": 7,
+            "time": 1513605156.734426,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 4,
+            "step": 8,
+            "time": 1513605157.2167099,
+            "total_power": 0,
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 9,
+            "time": 1513605157.9456089,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 10,
+            "time": 1513605158.224142,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 11,
+            "time": 1513605158.883492,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 12,
+            "time": 1513605159.238653,
+            "total_power": 0,
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 13,
+            "time": 1513605159.978233,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 14,
+            "time": 1513605160.166805,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 15,
+            "time": 1513605160.746061,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 16,
+            "time": 1513605160.975339,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 17,
+            "time": 1513605161.5788422,
+            "total_power": 0,
+            "winner": "aff86494-e3fa-11e7-85e0-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 18,
+            "time": 1513605162.020364,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "aff86494-e3fa-11e7-85e0-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 19,
+            "time": 1513605162.363065,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 4,
+            "step": 20,
+            "time": 1513605162.8504589,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 4,
+            "step": 21,
+            "time": 1513605163.2739048,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 22,
+            "time": 1513605163.468801,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 23,
+            "time": 1513605163.883004,
+            "total_power": 0,
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 24,
+            "time": 1513605164.3042371,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 25,
+            "time": 1513605164.576433,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 26,
+            "time": 1513605164.9752262,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 27,
+            "time": 1513605165.2423942,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 28,
+            "time": 1513605165.616589,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 29,
+            "time": 1513605165.9229949,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 30,
+            "time": 1513605166.627944,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 31,
+            "time": 1513605167.124959,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 32,
+            "time": 1513605167.549571,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 33,
+            "time": 1513605168.0637949,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 34,
+            "time": 1513605168.619373,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 35,
+            "time": 1513605168.901767,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 36,
+            "time": 1513605169.359958,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 4,
+            "step": 37,
+            "time": 1513605170.08199,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 38,
+            "time": 1513605170.983395,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 39,
+            "time": 1513605171.3970408,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 40,
+            "time": 1513605171.598378,
+            "total_power": 0,
+            "winner": "aff86494-e3fa-11e7-85e0-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 4,
+            "step": 41,
+            "time": 1513605172.3022778,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "aff86494-e3fa-11e7-85e0-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 42,
+            "time": 1513605172.54432,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 43,
+            "time": 1513605172.9211562,
+            "total_power": 0,
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 44,
+            "time": 1513605173.6057448,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 45,
+            "time": 1513605173.932108,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 4,
+            "step": 46,
+            "time": 1513605174.4843268,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 47,
+            "time": 1513605174.721814,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 48,
+            "time": 1513605175.242105,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 49,
+            "time": 1513605175.874113,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 50,
+            "time": 1513605176.434497,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 51,
+            "time": 1513605177.0220401,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 4,
+            "step": 52,
+            "time": 1513605177.448171,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 53,
+            "time": 1513605177.7445068,
+            "total_power": 0,
+            "winner": "aff86494-e3fa-11e7-85e0-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 54,
+            "time": 1513605178.375621,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "aff86494-e3fa-11e7-85e0-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 55,
+            "time": 1513605178.967768,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 56,
+            "time": 1513605179.780172,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 57,
+            "time": 1513605180.370324,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 58,
+            "time": 1513605181.0837388,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 59,
+            "time": 1513605181.4862568,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 60,
+            "time": 1513605181.9949691,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 61,
+            "time": 1513605182.287715,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 62,
+            "time": 1513605182.581109,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 63,
+            "time": 1513605182.976197,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 64,
+            "time": 1513605183.7366211,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 65,
+            "time": 1513605184.069331,
+            "total_power": 0,
+            "winner": "aff86494-e3fa-11e7-85e0-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 66,
+            "time": 1513605184.699726,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "aff86494-e3fa-11e7-85e0-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 67,
+            "time": 1513605185.104188,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 68,
+            "time": 1513605185.267633,
+            "total_power": 0,
+            "winner": "aff86494-e3fa-11e7-85e0-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 69,
+            "time": 1513605185.844012,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "aff86494-e3fa-11e7-85e0-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 70,
+            "time": 1513605186.288186,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 71,
+            "time": 1513605186.60154,
+            "total_power": 0,
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 72,
+            "time": 1513605187.16771,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 73,
+            "time": 1513605187.393635,
+            "total_power": 0,
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 74,
+            "time": 1513605187.820548,
+            "total_power": 0,
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 75,
+            "time": 1513605188.426564,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 76,
+            "time": 1513605188.931304,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 77,
+            "time": 1513605189.546166,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 78,
+            "time": 1513605190.100918,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 79,
+            "time": 1513605190.291075,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 80,
+            "time": 1513605190.7491899,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 81,
+            "time": 1513605191.522548,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 82,
+            "time": 1513605191.919263,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 83,
+            "time": 1513605192.78032,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 84,
+            "time": 1513605193.764021,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 5,
+            "step": 85,
+            "time": 1513605194.3546638,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 86,
+            "time": 1513605195.166229,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 3,
+            "step": 87,
+            "time": 1513605195.4503732,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 4,
+            "step": 88,
+            "time": 1513605195.648195,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 2,
+            "step": 89,
+            "time": 1513605197.013385,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 1,
+            "reward": 10,
+            "solution": 1,
+            "step": 90,
+            "time": 1513605197.914925,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
         }
     ],
     "2": [
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 439,
+            "solution": 2,
             "step": 0,
-            "time": 1513601981.645398,
+            "time": 1513605153.586101,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
             "winner_last": -1
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 836,
+            "solution": 2,
             "step": 1,
-            "time": 1513601981.950598,
+            "time": 1513605153.932682,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "aff86494-e3fa-11e7-85e0-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 765,
+            "solution": 5,
             "step": 2,
-            "time": 1513601982.435601,
+            "time": 1513605154.185481,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "aff86494-e3fa-11e7-85e0-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 888,
+            "solution": 3,
             "step": 3,
-            "time": 1513601982.675828,
+            "time": 1513605154.821049,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 729,
+            "solution": 5,
             "step": 4,
-            "time": 1513601983.242251,
+            "time": 1513605155.3191428,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "aff86494-e3fa-11e7-85e0-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 94,
+            "solution": 3,
             "step": 5,
-            "time": 1513601983.67462,
+            "time": 1513605155.734636,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff86494-e3fa-11e7-85e0-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 581,
+            "solution": 3,
             "step": 6,
-            "time": 1513601985.590219,
+            "time": 1513605156.177085,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 803,
+            "solution": 3,
             "step": 7,
-            "time": 1513601985.898541,
+            "time": 1513605156.62718,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 16,
+            "solution": 5,
             "step": 8,
-            "time": 1513601987.534902,
+            "time": 1513605157.1558342,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 744,
+            "solution": 4,
             "step": 9,
-            "time": 1513601987.7110999,
+            "time": 1513605157.73281,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 627,
+            "solution": 4,
             "step": 10,
-            "time": 1513601988.276973,
+            "time": 1513605157.982097,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 840,
+            "solution": 3,
             "step": 11,
-            "time": 1513601988.838618,
+            "time": 1513605158.257159,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 218,
+            "solution": 5,
             "step": 12,
-            "time": 1513601989.5217202,
+            "time": 1513605158.9335659,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 358,
+            "solution": 1,
             "step": 13,
-            "time": 1513601990.5237792,
+            "time": 1513605159.2617931,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
         },
         {
             "chain_id": 2,
             "reward": 10,
-            "solution": 255,
+            "solution": 3,
             "step": 14,
-            "time": 1513601990.67313,
+            "time": 1513605160.004864,
             "total_power": 0,
-            "winner": "4fad6046-e3f3-11e7-bba1-a0999b140701",
-            "winner_last": "4fad6046-e3f3-11e7-bba1-a0999b140701"
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 15,
+            "time": 1513605160.183452,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 16,
+            "time": 1513605160.683413,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 1,
+            "step": 17,
+            "time": 1513605160.9908748,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 18,
+            "time": 1513605161.3366468,
+            "total_power": 0,
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 19,
+            "time": 1513605162.142653,
+            "total_power": 0,
+            "winner": "aff86494-e3fa-11e7-85e0-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 20,
+            "time": 1513605162.386869,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "aff86494-e3fa-11e7-85e0-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 21,
+            "time": 1513605162.7596412,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 22,
+            "time": 1513605163.1103208,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 23,
+            "time": 1513605163.311815,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 1,
+            "step": 24,
+            "time": 1513605163.487745,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 1,
+            "step": 25,
+            "time": 1513605164.0588758,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 26,
+            "time": 1513605164.3775308,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 27,
+            "time": 1513605164.596928,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 28,
+            "time": 1513605164.995153,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 29,
+            "time": 1513605165.2511811,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 30,
+            "time": 1513605165.664757,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 31,
+            "time": 1513605166.119522,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 32,
+            "time": 1513605166.7732081,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 33,
+            "time": 1513605167.2330859,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 1,
+            "step": 34,
+            "time": 1513605167.72381,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 35,
+            "time": 1513605168.242063,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 36,
+            "time": 1513605168.630645,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 37,
+            "time": 1513605168.91555,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 38,
+            "time": 1513605169.401387,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 39,
+            "time": 1513605169.919033,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 40,
+            "time": 1513605170.698847,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 41,
+            "time": 1513605171.486582,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 42,
+            "time": 1513605171.923305,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 43,
+            "time": 1513605172.20755,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 44,
+            "time": 1513605172.427498,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 45,
+            "time": 1513605172.9362729,
+            "total_power": 0,
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 46,
+            "time": 1513605173.6339781,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 47,
+            "time": 1513605174.0063202,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 48,
+            "time": 1513605174.4961998,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 1,
+            "step": 49,
+            "time": 1513605174.744067,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 50,
+            "time": 1513605175.2829921,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 51,
+            "time": 1513605175.9121752,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 52,
+            "time": 1513605176.520108,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 53,
+            "time": 1513605176.95769,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 54,
+            "time": 1513605177.3607092,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 55,
+            "time": 1513605177.635212,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 56,
+            "time": 1513605177.983635,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 57,
+            "time": 1513605178.4552221,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 1,
+            "step": 58,
+            "time": 1513605178.978423,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 59,
+            "time": 1513605179.8108191,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 1,
+            "step": 60,
+            "time": 1513605180.467687,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 61,
+            "time": 1513605181.432427,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 62,
+            "time": 1513605181.953171,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 63,
+            "time": 1513605182.3123379,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 64,
+            "time": 1513605182.628048,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 65,
+            "time": 1513605182.964339,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 66,
+            "time": 1513605183.3265002,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 67,
+            "time": 1513605183.803133,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 68,
+            "time": 1513605184.408034,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 69,
+            "time": 1513605184.760533,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 70,
+            "time": 1513605185.136653,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 71,
+            "time": 1513605185.3386471,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 72,
+            "time": 1513605185.857911,
+            "total_power": 0,
+            "winner": "aff372ae-e3fa-11e7-94ec-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 73,
+            "time": 1513605186.314968,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "aff372ae-e3fa-11e7-94ec-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 74,
+            "time": 1513605186.617781,
+            "total_power": 0,
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 75,
+            "time": 1513605187.187117,
+            "total_power": 0,
+            "winner": "b002f652-e3fa-11e7-98c2-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 76,
+            "time": 1513605187.407441,
+            "total_power": 0,
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "b002f652-e3fa-11e7-98c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 77,
+            "time": 1513605187.9905012,
+            "total_power": 0,
+            "winner": "b000aef6-e3fa-11e7-ba99-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 1,
+            "step": 78,
+            "time": 1513605188.459938,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "b000aef6-e3fa-11e7-ba99-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 79,
+            "time": 1513605188.976883,
+            "total_power": 0,
+            "winner": "affab668-e3fa-11e7-836c-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 80,
+            "time": 1513605189.574118,
+            "total_power": 0,
+            "winner": "aff19ba8-e3fa-11e7-a082-a0999b140701",
+            "winner_last": "affab668-e3fa-11e7-836c-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 81,
+            "time": 1513605190.139462,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "aff19ba8-e3fa-11e7-a082-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 82,
+            "time": 1513605190.3061278,
+            "total_power": 0,
+            "winner": "affe0cdc-e3fa-11e7-80c2-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 83,
+            "time": 1513605190.769973,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "affe0cdc-e3fa-11e7-80c2-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 84,
+            "time": 1513605191.138426,
+            "total_power": 0,
+            "winner": "aff00428-e3fa-11e7-8a03-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 85,
+            "time": 1513605191.862609,
+            "total_power": 0,
+            "winner": "aff86494-e3fa-11e7-85e0-a0999b140701",
+            "winner_last": "aff00428-e3fa-11e7-8a03-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 1,
+            "step": 86,
+            "time": 1513605192.43206,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff86494-e3fa-11e7-85e0-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 1,
+            "step": 87,
+            "time": 1513605192.908976,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 88,
+            "time": 1513605193.781823,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 2,
+            "step": 89,
+            "time": 1513605194.3754728,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 90,
+            "time": 1513605195.1827781,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 91,
+            "time": 1513605195.4597208,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 3,
+            "step": 92,
+            "time": 1513605195.663614,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 4,
+            "step": 93,
+            "time": 1513605196.15795,
+            "total_power": 0,
+            "winner": "affc6800-e3fa-11e7-bd22-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 94,
+            "time": 1513605197.027515,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "affc6800-e3fa-11e7-bd22-a0999b140701"
+        },
+        {
+            "chain_id": 2,
+            "reward": 10,
+            "solution": 5,
+            "step": 95,
+            "time": 1513605197.9339242,
+            "total_power": 0,
+            "winner": "aff51dca-e3fa-11e7-a011-a0999b140701",
+            "winner_last": "aff51dca-e3fa-11e7-a011-a0999b140701"
         }
     ]
 }

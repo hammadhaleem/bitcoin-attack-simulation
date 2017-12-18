@@ -14,7 +14,8 @@ from subprocess import call
 from server import *
 
 number_of_chains = 2
-max_solution_size = 1000
+max_solution_size = 5
+
 serverurl = 'http://0.0.0.0:5000' 
 
 chain_step = 0

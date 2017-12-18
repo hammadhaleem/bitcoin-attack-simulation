@@ -5,6 +5,8 @@ import time
 import asyncio, threading, sys
 import pprint as pp
 
+from random import randint
+from time import sleep
 from settings import  *
 serverurl = 'http://0.0.0.0:5000' #'http://10.89.91.27:5000' if int(sys.argv[1]) == 1 else 'http://0.0.0.0:5000'
 
@@ -19,7 +21,7 @@ class Miner(threading.Thread ):
         threading.Thread.__init__(self)
         self.totalCoins = 0
         self.internalID = internalId
-        self.totalPower = rand.randint(1,100)
+        self.totalPower = rand.randint(90,100)
         self.allChains = ['C1','C2']
         self.all_blocks = {}
         self.max_block_count = blocks
@@ -65,7 +67,7 @@ class Miner(threading.Thread ):
 
 
             # if miner found the i am not on correct step skip
-            if data['step'] == step:
+            if data['step'] >= step:
 
                 actual_sol = str(eval(r.text)['data']['solution'])
 
@@ -95,6 +97,7 @@ class Miner(threading.Thread ):
 
         current_round = 0
         while True:
+            sleep(randint(10,100)/100)
             if current_round >= self.max_block_count:
                 break
 

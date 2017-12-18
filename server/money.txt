@@ -1,5 +1,40 @@
+<<<<<<< HEAD
 Miner 2 has Money 0
 Miner 1 has Money 0
 Miner 0 has Money 0
 Miner 4 has Money 0
 Miner 3 has Money 0
+=======
+Miner 0 has Money 0
+Miner 1 has Money 0
+Miner 1 has Money 0
+Miner 0 has Money 0
+Miner 1 has Money 0
+Miner 0 has Money 0
+Miner 1 has Money 0
+Miner 1 has Money 0
+Miner 0 has Money 10
+Miner 1 has Money 0
+Miner 0 has Money 10
+Miner 1 has Money 0
+Miner 0 has Money 10
+Miner 1 has Money 0
+Miner 0 has Money 10
+Miner 0 has Money 10
+Miner 1 has Money 0
+Miner 1 has Money 0
+Miner 0 has Money 10
+Miner 1 has Money 0
+Miner 0 has Money 10
+Miner 1 has Money 0
+Miner 0 has Money 10
+Miner 0 has Money 10
+Miner 1 has Money 0
+Miner 1 has Money 0
+Miner 0 has Money 10
+Miner 0 has Money 10
+Miner 1 has Money 0
+Miner 1 has Money 0
+Miner 0 has Money 20
+Miner 1 has Money 0
+>>>>>>> 53ab602530e605cabfd73ca80dbe52256496b66e

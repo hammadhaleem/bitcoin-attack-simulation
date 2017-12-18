@@ -6,24 +6,22 @@ import asyncio, threading, sys
 import pprint as pp
 
 from settings import  *
-serverurl = 'http://0.0.0.0:5000' #'http://10.89.91.27:5000' if int(sys.argv[1]) == 1 else 'http://0.0.0.0:5000'
+serverurl = 'http://10.89.91.27:5000' if int(sys.argv[1]) == 1 else 'http://0.0.0.0:5000'
 
 completedChains = set()
-open("money.txt","w").close()
-open("info.txt","w").close()
+open("../miner/money.txt","w").close()
+open("../miner/info.txt","w").close()
 
 
-class Miner(threading.Thread ):
+class Miner(threading.Thread):
     #This initializes the Miner and its thread for execution
-    def __init__(self,internalId, blocks):
+    def __init__(self,internalId):
         threading.Thread.__init__(self)
         self.totalCoins = 0
         self.internalID = internalId
         self.totalPower = rand.randint(1,100)
         self.allChains = ['C1','C2']
         self.all_blocks = {}
-        self.max_block_count = blocks
-        #self.strategy = strategy
         r = requests.get(serverurl+"/join/"+str(self.totalPower))
         self.ID = eval(r.text)['data']['miner_id']
         print("Hello, I am Miner "+str(self.ID))
@@ -95,10 +93,9 @@ class Miner(threading.Thread ):
 
         current_round = 0
         while True:
-            if current_round >= self.max_block_count:
+            if current_round >= max_rounds:
                 break
 
-            # print((current_round, self.max_block_count, self.all_blocks))
             self.send_chain_power()
             self.do_mining()
 
@@ -108,12 +105,12 @@ class Miner(threading.Thread ):
                     current_blocks_discovered+=v1
 
             # print((self.internalID, self.all_blocks))
-            with open("money.txt","a+") as f:
+            with open("../miner/money.txt","a+") as f:
                 f.write("Miner " + str(self.internalID) + " has Money " + str(self.totalCoins) + "\n")
 
             if current_blocks_discovered != current_round:
                 if self.internalID == 0:
-                    with open("info.txt",'a+') as f:
+                    with open("../miner/info.txt",'a+') as f:
                         fi = float(int((time.time() - start_time)*100))/100
                         stri = "This is Info for block " + str(current_round)+" which took " + str(fi) + " seconds."
                         f.write(stri+"\n")
@@ -128,11 +125,12 @@ class Miner(threading.Thread ):
         #print("Miner " + str(self.ID) + " finished his round in " + str(time.time() - start_time))
         #print("Miner " + str(self.ID) + " sees " + str(self.allChains))
 
-def run_miners(blocks, miners):
-    Miners = []
-    a = time.time()
-    for i in range(miners):
-        Miners.append(Miner(i, blocks))
-        Miners[-1].start()
 
-run_miners(blocks=int(sys.argv[1]), miners=int(sys.argv[2]))
+r = requests.get(serverurl+"/refresh/")
+Miners = []
+a = time.time()
+for i in range(int(sys.argv[2])):
+    Miners.append(Miner(i))
+    Miners[-1].start()
+
+# list(map((lambda x: x.start()), Miners))

@@ -1,0 +1,6 @@
+This is Info for block 0 which took 0.42 seconds.
+{'chain_id': 1, 'reward': 10, 'solution': 410, 'step': 0, 'total_power': 0, 'winner': -1, 'winner_last': -1, 'my_relative_power': 0.5866666666666667}
+{'chain_id': 2, 'reward': 10, 'solution': 431, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '44049d78-e3e3-11e7-b923-c4b3019e39fc'}
+This is Info for block 1 which took 0.51 seconds.
+{'chain_id': 1, 'reward': 10, 'solution': 823, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '44049d78-e3e3-11e7-b923-c4b3019e39fc'}
+{'chain_id': 2, 'reward': 10, 'solution': 431, 'step': 1, 'total_power': 0, 'winner': -1, 'winner_last': '44049d78-e3e3-11e7-b923-c4b3019e39fc', 'my_relative_power': 0.5866666666666667}

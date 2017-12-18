@@ -3,7 +3,6 @@ from flask import jsonify
 
 import glob , os, json , random
 import networkx as nx
-from networkx.readwrite import json_graph
 import shutil
 from flask import Flask, Response
 import uuid,time
@@ -15,13 +14,16 @@ chain_step = 0
 initialize_lock = []
 state_cache ={}
 
+winning_lock = []
 miners  = []
-miners_ ={}
 
+miners_ ={}
 miners_mining  = {}
 
 ## chain information
+chain_power_allocated = {}
 chains = {}
+winners_list = {}
 for i in range(1, number_of_chains+1):
 	chains[i] = {
 			'chain_id': i,
@@ -29,12 +31,12 @@ for i in range(1, number_of_chains+1):
 			'step' : 0,
 			'total_power' : 0,
 			'winner_last' : -1,
-			'solution' : 10
+			'solution' : 10,
+			'winner' : -1
 		}
 
-chain_power_allocated = {
+	winners_list[i] = []
 
-}
 # # # # #
 
 app = Flask(__name__)
@@ -56,7 +58,28 @@ def return_chains():
 
 @app.route("/get_all_miners")
 def return_miner_info():
-	return jsonify(data={'miners' : miners_, 'all_joined_miners':len(miners_.keys()) })
+	return jsonify(data={
+		'miners' : miners_, 
+		'all_joined_miners':len(miners_.keys())
+	})
+
+@app.route('/ledger')
+def ledger():
+
+	data = {}
+	for k,value in winners_list.items():
+		data[k] = {}
+		for i in value:
+			try:
+				data[k][i['winner']]['coins'] += i['reward']
+			except:
+				data[k][i['winner']] ={}
+				data[k][i['winner']]['coins'] = i['reward']
+				data[k][i['winner']]['power'] = miners_[i['winner']]
+	
+
+
+	return jsonify(data=data)
 
 @app.route('/refresh/')
 @app.route('/refresh')
@@ -76,6 +99,10 @@ def refresh():
 	s=set(chain_power_allocated.keys())
 	for i in s:
 		del chain_power_allocated[i]
+
+	s=set(winners_list.keys())
+	for i in s:
+		winners_list[i]=[]
 
 	for i in range(1, number_of_chains+1):
 		chains[i] = {
@@ -140,8 +167,6 @@ def chain_powers(chain, current_power, miner_id):
 		'current_power' : current_power
 	})
 
-
-winning_lock = []
 @app.route("/who_won/<miner_id>/<solution>/<chain_step>/<chain_id>")
 def who_won(miner_id, solution, chain_step, chain_id):
 	chain_id = int(chain_id)
@@ -159,16 +184,31 @@ def who_won(miner_id, solution, chain_step, chain_id):
 		# someone else came before me
 		if int(obj['step']) > int(chain_step):
 			break
+
+	# its my turn 
+	obj = chains[chain_id]
+
 	# update the chain if you won
 	if  int(obj['step']) == int(chain_step) and int(solution) == int(obj['solution']):
+
+		# i am the winner 
+		obj['winner'] = miner_id
+		print((obj, miner_id,chain_id))
+		winners_list[chain_id].append(obj.copy())
+
 		obj['step'] += 1
 		obj['winner_last'] = miner_id
 		obj['solution'] = random.randint(1,100)
+		obj['winner'] = -1
 		# with open('results.txt','a') as f:
 		# 	f.write("SOLUTION FOUND FOR CHAIN "+str(obj['chain_id']) + " BY " + str(miner_id)+"\n")
 		# 	f.write(str(obj)+"\n")
 		# 	f.close()
 		chains[chain_id] = obj
+
+		with open('winners_list.json', 'w') as outfile:
+			data = json.dumps(winners_list, indent=4, sort_keys=True)
+			outfile.write(data)
 
 	# else get you didn't win you get winners name
 	winning_lock.pop(0)

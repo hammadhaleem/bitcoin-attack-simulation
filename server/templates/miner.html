@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Miner template</title>
+
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+   <h1>ChainAttacker:Blockchain Simulation System</h1>
+   <input type='number' placeholder=2 id='Chains'> # Chains
+   <input type='number' placeholder=10 id='Miners'> # Miners
+   <input type='number' placeholder=30 id='Blocks'> # Solved Blocks
+   <input type='submit' onclick='sendParameters()'>
+</body>
+<script>
+function sendParameters() {
+  $.post("http://10.89.91.27:5000/send_parameters", {
+    'Chains': parseInt($("#Chains").val()),
+    'Miners': parseInt($("#Miners").val()),
+    'Blocks': parseInt($("#Blocks").val())
+  }, function(result) {
+    startSimulation()
+  })
+}
+
+function startSimulation() {
+  var i = 0;
+  var timer = setInterval(function() {
+    $.post("/ledger")
+    if (i === 5) clearInterval(timer);
+    console.log('post-interval'); //this will still run after clearing
+  }, 200);
+}
+
+
+</script>
+
+</html>

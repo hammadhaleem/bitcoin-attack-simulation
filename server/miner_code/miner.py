@@ -14,7 +14,7 @@ completedChains = set()
 open("money.txt","w").close()
 open("info.txt","w").close()
 
-
+oldAllocation = {'0': 0.5, '1': 0.5}
 class Miner(threading.Thread ):
     #This initializes the Miner and its thread for execution
     def __init__(self,internalId, blocks, power=None):
@@ -34,8 +34,8 @@ class Miner(threading.Thread ):
         self.ID = eval(r.text)['data']['miner_id']
         print("Hello, I am Miner "+str(self.ID))
         self.discover_chains()
-
-        requests.get(serverurl+"/attacker/"+str(self.ID))
+        if self.attacker is True:
+            requests.get(serverurl+"/attacker/"+str(self.ID))
 
     def get_power(self):
         return self.totalPower
@@ -55,9 +55,17 @@ class Miner(threading.Thread ):
 
     # This is where the miner decides how much power to put into every chain
     def send_chain_power(self):
-        powerPerChain = int(self.totalPower/len(self.allChains))
+        #powerPerChain = int(self.totalPower/len(self.allChains))
+        powerPerChain = {}
+        if len(self.allChains) == 1:
+            powerPerChain['0'] = self.totalPower
+        else:
+            payoffs = [i['reward']/max(i['total_power'],1) for i in self.allChains]
+            oldAllocation['0'] = min(1,oldAllocation['0']+0.05) if payoffs[0] > payoffs[1] else max(0,oldAllocation['0'] - 0.05)
+            oldAllocation['1'] = 1 - oldAllocation['0']
+            powerPerChain['0'] = int(oldAllocation['0']*self.totalPower)
+            powerPerChain['1'] = int(oldAllocation['1']*self.totalPower)
         urls = []
-
         for i,val in enumerate(self.allChains):
             if(self.attacker):
                 if(i == 1) :
@@ -65,8 +73,8 @@ class Miner(threading.Thread ):
                 else:
                     urls.append(serverurl+"/chain_powers/"+str(val['chain_id'])+'/' + str(self.totalPower) + '/'+str(self.ID))
             else:
-                urls.append(serverurl+"/chain_powers/"+str(val['chain_id'])+'/'+str(powerPerChain)+'/'+str(self.ID))
-
+                urls.append(serverurl+"/chain_powers/"+str(val['chain_id'])+'/'+str(powerPerChain[str(i)])+'/'+str(self.ID))
+        print(self.ID," ",powerPerChain)
         result = (grequests.get(u) for u in urls)
         result = [eval(a.text)['data'] for  a in grequests.map(result)]
         for i in range(len(self.allChains)):
@@ -82,7 +90,6 @@ class Miner(threading.Thread ):
             step = val['step']
             r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+str(max_solution_size+1)+"/"+str(step)+'/'+str(val['chain_id']))
             data = eval(r.text)['data']
-
             self.allChains[i] = eval(r.text)['data']
             self.all_blocks[str(i+1)] = max( int(eval(r.text)['data']['step']) ,self.all_blocks[str(i+1)])
 

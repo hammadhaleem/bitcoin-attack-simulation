@@ -132,7 +132,7 @@ def ledger():
 @app.route("/attacker/<miner_id>")
 def set_attacker(miner_id):
 	global attacker_id
-	attacker_id = miner_id 
+	attacker_id = miner_id
 	return jsonify(data={})
 
 
@@ -220,9 +220,8 @@ def chain_powers(chain, current_power, miner_id):
 
 	chain_info = chain_power_allocated[chain]
 
-
 	powers = [ int(chain_info[miner]) for miner in chain_info.keys()]
-
+	chains[chain]['total_power'] = sum(powers)
 	# print((powers,float(current_power) / sum(powers) ))
 	return jsonify(data={
 		'relative_power' : float(current_power) / sum(powers),

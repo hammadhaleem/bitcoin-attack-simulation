@@ -23,6 +23,8 @@ class Miner(threading.Thread ):
         self.internalID = internalId
 
         self.totalPower = power if power else rand.randint(50,100)
+        self.attacker = True if power else False
+
         self.allChains = ['C1','C2']
         self.all_blocks = {}
         self.max_block_count = blocks
@@ -32,6 +34,8 @@ class Miner(threading.Thread ):
         self.ID = eval(r.text)['data']['miner_id']
         print("Hello, I am Miner "+str(self.ID))
         self.discover_chains()
+
+        requests.get(serverurl+"/attacker/"+str(self.ID))
 
     def get_power(self):
         return self.totalPower

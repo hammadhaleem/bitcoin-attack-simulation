@@ -33,6 +33,7 @@ miners_mining  = {}
 chain_power_allocated = {}
 chains = {}
 winners_list = {}
+attacker_id = None
 
 for i in range(1, number_of_chains+1):
 	chains[i] = {
@@ -124,8 +125,16 @@ def ledger():
 	return jsonify(data={
 		'account': data,
 		'sequence':winners_list,
-		'miners' : miners_
+		'miners' : miners_,
+		'attacker' : attacker_id
 	})
+
+@app.route("/attacker/<miner_id>")
+def set_attacker(miner_id):
+	global attacker_id
+	attacker_id = miner_id 
+	return jsonify(data={})
+
 
 @app.route('/refresh/')
 @app.route('/refresh')

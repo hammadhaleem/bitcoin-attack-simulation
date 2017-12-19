@@ -59,7 +59,13 @@ class Miner(threading.Thread ):
         urls = []
 
         for i,val in enumerate(self.allChains):
-            urls.append(serverurl+"/chain_powers/"+str(val['chain_id'])+'/'+str(powerPerChain)+'/'+str(self.ID))
+            if(self.attacker):
+                if(i == 1) :
+                    urls.append(serverurl+"/chain_powers/"+str(val['chain_id'])+'/0/'+str(self.ID))
+                else:
+                    urls.append(serverurl+"/chain_powers/"+str(val['chain_id'])+'/' + str(self.totalPower) + '/'+str(self.ID))
+            else:
+                urls.append(serverurl+"/chain_powers/"+str(val['chain_id'])+'/'+str(powerPerChain)+'/'+str(self.ID))
 
         result = (grequests.get(u) for u in urls)
         result = [eval(a.text)['data'] for  a in grequests.map(result)]
@@ -74,7 +80,7 @@ class Miner(threading.Thread ):
         for i,val in enumerate(self.allChains):
             numberTries = int(val['my_relative_power'] * 100)
             step = val['step']
-            r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+str(rand.randint(1,max_solution_size))+"/"+str(step)+'/'+str(val['chain_id']))
+            r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+str(max_solution_size+1)+"/"+str(step)+'/'+str(val['chain_id']))
             data = eval(r.text)['data']
 
             self.allChains[i] = eval(r.text)['data']
@@ -91,7 +97,7 @@ class Miner(threading.Thread ):
                     if(eval(r.text)['data']['step'] > step):
                         if(str(self.ID) == eval(r.text)['data']['winner_last']):
                             self.totalCoins += eval(r.text)['data']['reward']
-                        
+
                         completedChains.add(str(eval(r.text)['data']))
                         # break
 
@@ -111,8 +117,9 @@ class Miner(threading.Thread ):
 
             current_blocks_discovered = 0
             for k,v in self.all_blocks.items():
-                current_blocks_discovered+=v
-
+                if int(k) == 1:
+                    current_blocks_discovered+=int(v)
+            print(current_blocks_discovered)
             # print((self.internalID, self.all_blocks))
             with open("money.txt","a+") as f:
                 f.write("Miner " + str(self.internalID) + " has Money " + str(self.totalCoins) + "\n")

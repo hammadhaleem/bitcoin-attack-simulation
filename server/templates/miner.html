@@ -26,6 +26,7 @@
    <div class="progress">
   <div id='LedgerProgress' class="progress-bar" role="progressbar" aria-valuenow="0"
   aria-valuemin="0" aria-valuemax="100" style="width:0%">
+  <span id='LedgerProgressText'><span>
   </div>
 </div>
    <div id='Ledger'>
@@ -47,19 +48,19 @@ function sendParameters() {
 
   console.log(data);
   a = setInterval(startSimulation,1000)
-  b = setInterval(updateLedgerProgress,50)
   $.post("http://localhost:5000/send_parameters", data, function(result) {
     clearInterval(a)
-    clearInterval(b)
-    $("#LedgerProgress").width("0%")
     startSimulation();
+    $("#LedgerProgress").width("0%")
+    $("#LedgerProgressText").text("Complete")
   })
 }
 
 function updateLedgerProgress(Found) {
   PercentageFound = parseInt(100*(Found/parseInt($("#Blocks").val())))
-  console.log(PercentageFound)
+  $("#LedgerProgressText").text(Found+"/"+parseInt($("#Blocks").val()))
   $("#LedgerProgress").width(PercentageFound+"%")
+
   $("#LedgerProgress").attr("aria-valuenow",PercentageFound)
 }
 function startSimulation() {
@@ -70,22 +71,45 @@ function startSimulation() {
     // Account Table
     totalCoins = 0
     attacker = eval(result)['data']['attacker']
-    $("#Account").empty().append("<tr><th>ID</th><th>Chain</th><th> Money </th> <th> Power </th></tr>")
+    $("#Account").empty().append("<tr><th>ID</th><th>Chain</th><th> Blocks Mined </th></tr>")
     for (var i in accountInfo) {
       ids = Object.keys(accountInfo[i])
+      totalBlocksOfOthers = 0
+      costToAttacker = 0
       for(var j = 0; j < ids.length; j++) {
-        $("#Account").append("<tr cellpadding='5'>")
         if(ids[j] == attacker) {
-          $("#Account").append("<td bgcolor='red'>"+ids[j] + "</td>")
+          $("#Account").append("<tr>")
+          $("#Account").append("<td style='color:red'>"+ids[j] + "</td>")
+          $("#Account").append("<td>"+i+"</td>")
+          $("#Account").append("<td>"+parseInt(accountInfo[i][ids[j]]['coins']/10) + "</td>")
+          //$("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
+          $("#Account").append("</tr>")
+        } else if(i == 1) {
+          totalBlocksOfOthers += parseInt(accountInfo[i][ids[j]]['coins']/10)
+          //$("#Account").append("<td>"+ids[j] + "</td>")
         } else {
-          $("#Account").append("<td>"+ids[j] + "</td>")
+          costToAttacker += accountInfo[i][ids[j]]['coins']
         }
-        $("#Account").append("<td>"+i+"</td>")
-        $("#Account").append("<td>"+accountInfo[i][ids[j]]['coins'] + "</td>")
-        $("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
-        $("#Account").append("</tr>")
-        totalCoins += accountInfo[i][ids[j]]['coins']
+        if(i == 1) {
+          totalCoins += accountInfo[i][ids[j]]['coins']
+        }
       }
+    }
+    if(totalBlocksOfOthers > 0) {
+      $("#Account").append("<tr>")
+      $("#Account").append("<td> Other Miners </td>")
+      $("#Account").append("<td> 1 </td>")
+      $("#Account").append("<td>"+totalBlocksOfOthers + "</td>")
+    //  $("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
+      $("#Account").append("</tr>")
+    }
+    if(costToAttacker > 0) {
+      $("#Account").append("<tr>")
+      $("#Account").append("<td> Cost to Attacker </td>")
+      $("#Account").append("<td>2</td>")
+      $("#Account").append("<td>"+costToAttacker + "</td>")
+    //  $("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
+      $("#Account").append("</tr>")
     }
     updateLedgerProgress(totalCoins/10)
   })

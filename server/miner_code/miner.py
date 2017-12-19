@@ -144,4 +144,4 @@ def run_miners(blocks, miners, percentage):
 
     s = [i.start() for i in Miners]
 
-run_miners(blocks=int(sys.argv[1]), miners=int(sys.argv[2]), percentage=0.35)
+run_miners(blocks=int(sys.argv[1]), miners=int(sys.argv[2]), percentage=float(sys.argv[3]))

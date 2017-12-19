@@ -70,7 +70,7 @@ class Miner(threading.Thread ):
             all_solutons = [str(rand.randint(0,max_solution_size+1)) for i in range(numberTries+1)]
 
             # if miner found the i am not on correct step skip
-            if data['step'] >= step:
+            if data['step'] == step:
                 if actual_sol in all_solutons:
                     # send my solution for current block
                     r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+actual_sol+"/"+str(val['step'])+'/'+str(val['chain_id']))

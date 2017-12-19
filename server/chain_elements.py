@@ -13,8 +13,8 @@ from subprocess import call
 
 from server import *
 
-number_of_chains = 2
-max_solution_size = 100
+number_of_chains = 1
+max_solution_size = 1000
 
 serverurl = 'http://0.0.0.0:5000'
 
@@ -153,7 +153,7 @@ def refresh():
 		del chains[i]
 
 
-	for i in range(1, number_of_chains+1):
+	for i in range(1, 2):
 		chains[i] = {
 				'chain_id': i,
 				'reward' : 10,
@@ -181,7 +181,7 @@ def discover_chains():
 def chain_powers(chain, current_power, miner_id):
 	current_power = int(current_power)
 	chain = int(chain)
-	print("In chain power ",int(current_power)," ",miners_[miner_id])
+	# print("In chain power ",int(current_power)," ",miners_[miner_id])
 	if int(current_power) <= miners_[miner_id]:
 		try:
 			chain_power_allocated[chain][miner_id] = current_power
@@ -194,7 +194,7 @@ def chain_powers(chain, current_power, miner_id):
 		return_ = False
 		for i in range(1, number_of_chains+1):
 
-			print(number_of_chains," ",len(chain_power_allocated.keys()))
+			# print(number_of_chains," ",len(chain_power_allocated.keys()))
 			if number_of_chains == len(chain_power_allocated.keys()) and \
 				len(miners_.keys()) == len(chain_power_allocated[i].keys()):
 				return_  = True

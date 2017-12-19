@@ -20,6 +20,7 @@
    # Miners <input type='number' placeholder=10 value = 1 id='Miners'>
    # Solved Blocks <input type='number' placeholder=30 value = 1 id='Blocks'>
    Base Attacker Power <input type='number' placeholder=35 value = 35 id='attackerPower'>
+   Reward for Puzzle Block <input type='number' placeholder=10 value = 10 id='Reward'>
    <input type='submit' onclick='sendParameters()'>
    <br><br><br><br>
    <div id='Ledger'>
@@ -35,8 +36,8 @@ function sendParameters() {
     'Chains': parseInt($("#Chains").val()),
     'Miners': parseInt($("#Miners").val()),
     'Blocks': parseInt($("#Blocks").val()),
-    'AttackerPower': parseInt($("#attackerPower").val())/100
-
+    'AttackerPower': parseInt($("#attackerPower").val())/100,
+    'Reward': parseInt($("#Reward").val())
   };
 
   console.log(data);

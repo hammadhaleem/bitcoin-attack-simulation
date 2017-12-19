@@ -42,9 +42,9 @@
                     <br/><h3># Solved Blocks</h3>
                     <input type='number' class="form-control" placeholder=10 value=10 id='Blocks'>
                     <br/><h3>Base Attacker Power</h3>
-                    <input type='number' class="form-control" placeholder=35 value=3 5 id='attackerPower'>
+                    <input type='number' class="form-control" placeholder=35 value=35 id='attackerPower'>
                     <br/><h3>Reward for Puzzle Block</h3>
-                    <input type='number' class="form-control" placeholder=10 value=1 0 id='Reward'>
+                    <input type='number' class="form-control" placeholder=10 value=10 id='Reward'>
                     <br>
                     <input type='submit' class="btn btn-primary" onclick='sendParameters();'>
 
@@ -55,8 +55,11 @@
 </body>
 <script>
 Done = false
-$("#RoundsSummary").append("<tr><th> # Chains </th><th> # Miners </th><th> # Blocks </th><th> Reward for Attacker Puzzle </th><th> Attacker Blocks </th><th> Other Blocks </th><th> Cost to Attacker </th><th> Attacker Profit </th></tr>")
+Counter = 0
+var a;
+$("#RoundsSummary").append("<tr><th>Chains</th><th>Miners</th><th>Blocks</th><th>Reward</th><th>Mined Blocks</th><th>Others Blocks</th><th>Cost</th><th>Profit</th></tr>")
 function sendParameters() {
+  Counter += 1
   Done = false
   $("#Account").empty()
   data = {
@@ -66,15 +69,18 @@ function sendParameters() {
     'AttackerPower': parseInt($("#attackerPower").val())/100,
     'Reward': parseInt($("#Reward").val())
   };
-
-  console.log(data);
   a = setInterval(startSimulation,1000)
   $.post("http://localhost:5000/send_parameters", data, function(result) {
     clearInterval(a)
-    startSimulation();
-    $("#LedgerProgress").width("0%")
-    $("#LedgerProgressText").text("Complete")
-    alert("COMPLETE")
+    startSimulation(1);
+    if(Counter < 6) {
+      Done = false
+      sendParameters()
+    } else {
+      $("#LedgerProgress").width("0%")
+      $("#LedgerProgressText").text("Complete")
+      alert("COMPLETE")
+    }
   })
 }
 
@@ -85,7 +91,8 @@ function updateLedgerProgress(Found) {
 
   $("#LedgerProgress").attr("aria-valuenow",PercentageFound)
 }
-function startSimulation() {
+function startSimulation(last=0) {
+  console.log("Simulating")
   $.get('http://localhost:5000/ledger',function(result) {
     if(!Done) {
       accountInfo = eval(result)['data']['account']
@@ -133,21 +140,11 @@ function startSimulation() {
     //  $("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
       $("#Account").append("</tr>")
     }
-    if ((totalBlocksAttacker - 7) >= totalBlocksOfOthers && (totalBlocksAttacker*10 - costToAttacker) > 0) {
+    if(last == 1) {
       Done = true
       AddToResultsSummary(totalBlocksAttacker,totalBlocksOfOthers,costToAttacker)
-      //$("#Results").append("<h4>Attacker won, earning "+(totalBlocksAttacker*10) + " and losing " + costToAttacker + " for a profit of " + (totalBlocksAttacker*10 - costToAttacker) +"</h4>")
     }
-    if ((totalBlocksAttacker + totalBlocksOfOthers) == parseInt($("#Blocks").val())) {
-      Done = true
-      AddToResultsSummary(totalBlocksAttacker,totalBlocksOfOthers,costToAttacker)
-      /*if(parseInt($("#Chains").val()) == 2) {
-        $("#Results").append("<h4> Attacker failed, costing him " + (costToAttacker - (totalBlocksAttacker*10)) + " </h4>")
-      } else {
-        $("#Results").append("<h4> Control Completed, achieved " + totalBlocksAttacker + " Blocks </h4>")
-      }*/
-    }
-    updateLedgerProgress(totalCoins/10)
+  updateLedgerProgress(totalCoins/10)
   }
   })
 }
@@ -165,36 +162,6 @@ function AddToResultsSummary(AttackerBlocks,OtherBlocks,AttackerCost) {
     $("#RoundsSummary").append("<td>" + (onlyOne ? '-' : AttackerBlocks*10 - AttackerCost) + " </td>")
     $("#RoundsSummary").append("</tr>")
 }
-
-
-    function startSimulation() {
-        $.get('http://localhost:5000/ledger', function(result) {
-            accountInfo = eval(result)['data']['account']
-            sequenceInfo = eval(result)['data']['sequence']
-                //$("#Ledger").empty().append(JSON.stringify(sequenceInfo))
-                // Account Table
-            totalCoins = 0
-            attacker = eval(result)['data']['attacker']
-            $("#Account").empty().append("<tr><th>ID</th><th>Chain</th><th> Money </th> <th> Power </th></tr>")
-            for (var i in accountInfo) {
-                ids = Object.keys(accountInfo[i])
-                for (var j = 0; j < ids.length; j++) {
-                    $("#Account").append("<tr cellpadding='5'>")
-                    if (ids[j] == attacker) {
-                        $("#Account").append("<td><p style='color:red;'>" + ids[j] + "</p></td>")
-                    } else {
-                        $("#Account").append("<td>" + ids[j] + "</td>")
-                    }
-                    $("#Account").append("<td>" + i + "</td>")
-                    $("#Account").append("<td>" + accountInfo[i][ids[j]]['coins'] + "</td>")
-                    $("#Account").append("<td>" + accountInfo[i][ids[j]]['power'] + "</td>")
-                    $("#Account").append("</tr>")
-                    totalCoins += accountInfo[i][ids[j]]['coins']
-                }
-            }
-            updateLedgerProgress(totalCoins / 10)
-        })
-    }
 </script>
 
 </html>

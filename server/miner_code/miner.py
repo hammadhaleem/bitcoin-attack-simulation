@@ -35,7 +35,8 @@ class Miner(threading.Thread ):
         print("Hello, I am Miner "+str(self.ID))
         self.discover_chains()
 
-        requests.get(serverurl+"/attacker/"+str(self.ID))
+        if self.attacker is True:
+            requests.get(serverurl+"/attacker/"+str(self.ID))
 
     def get_power(self):
         return self.totalPower

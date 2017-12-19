@@ -17,19 +17,27 @@ open("info.txt","w").close()
 
 class Miner(threading.Thread ):
     #This initializes the Miner and its thread for execution
-    def __init__(self,internalId, blocks):
+    def __init__(self,internalId, blocks, power=None):
         threading.Thread.__init__(self)
         self.totalCoins = 0
         self.internalID = internalId
-        self.totalPower = rand.randint(90,100) #Why so high?
+
+        self.totalPower = power if power else rand.randint(50,100)
         self.allChains = ['C1','C2']
         self.all_blocks = {}
         self.max_block_count = blocks
-        #self.strategy = strategy
+
+        print(serverurl+"/join/"+str(self.totalPower))
         r = requests.get(serverurl+"/join/"+str(self.totalPower))
         self.ID = eval(r.text)['data']['miner_id']
         print("Hello, I am Miner "+str(self.ID))
         self.discover_chains()
+
+    def get_power(self):
+        return self.totalPower
+
+    def set_power(self,number):
+        self.totalPower = number
 
     # When a miner is initialized, it will get information about the available chains through here
     def discover_chains(self):
@@ -39,7 +47,7 @@ class Miner(threading.Thread ):
         for i in keys:
             self.allChains.append(eval(r.text)['data'][i])
             self.allChains[-1]['my_relative_power'] = 0
-            self.all_blocks[i] = {}
+            self.all_blocks[i] = 0
 
     # This is where the miner decides how much power to put into every chain
     def send_chain_power(self):
@@ -65,6 +73,8 @@ class Miner(threading.Thread ):
             r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+str(rand.randint(1,max_solution_size))+"/"+str(step)+'/'+str(val['chain_id']))
             data = eval(r.text)['data']
 
+            self.allChains[i] = eval(r.text)['data']
+            self.all_blocks[str(i+1)] = max( int(eval(r.text)['data']['step']) ,self.all_blocks[str(i+1)])
 
             actual_sol = str(eval(r.text)['data']['solution'])
             all_solutons = [str(rand.randint(0,max_solution_size+1)) for i in range(numberTries+1)]
@@ -75,16 +85,11 @@ class Miner(threading.Thread ):
                     # send my solution for current block
                     r = requests.get(serverurl+"/who_won/"+str(self.ID)+"/"+actual_sol+"/"+str(val['step'])+'/'+str(val['chain_id']))
                     if(eval(r.text)['data']['step'] > step):
-
-                        self.all_blocks[str(i+1)][int(data['step'])] = 1
                         if(str(self.ID) == eval(r.text)['data']['winner_last']):
                             self.totalCoins += eval(r.text)['data']['reward']
-
-                        self.allChains[i] = eval(r.text)['data']
+                        
                         completedChains.add(str(eval(r.text)['data']))
                         # break
-            else:
-                self.all_blocks[str(i+1)][int(data['step'])] = 1
 
     #This is the threading loop
     def run(self):
@@ -102,8 +107,7 @@ class Miner(threading.Thread ):
 
             current_blocks_discovered = 0
             for k,v in self.all_blocks.items():
-                for k1,v1 in v.items():
-                    current_blocks_discovered+=v1
+                current_blocks_discovered+=v
 
             # print((self.internalID, self.all_blocks))
             with open("money.txt","a+") as f:
@@ -126,13 +130,16 @@ class Miner(threading.Thread ):
         #print("Miner " + str(self.ID) + " finished his round in " + str(time.time() - start_time))
         #print("Miner " + str(self.ID) + " sees " + str(self.allChains))
 
-def run_miners(blocks, miners):
+def run_miners(blocks, miners, percentage):
     Miners = []
     a = time.time()
     for i in range(miners):
-        Miners.append(Miner(i, blocks))
+        if i == miners - 1:
+            power = sum([i.get_power() for i in Miners])
+            new_power = int(( percentage * power ) / ( 1 - percentage)) + 1
+            Miners.append(Miner(i, blocks, new_power))
 
-    for m in  Miners:
-        m.start()
+        else:
+            Miners.append(Miner(i, blocks))
 
-run_miners(blocks=int(sys.argv[1]), miners=int(sys.argv[2]))
+run_miners(blocks=int(sys.argv[1]), miners=int(sys.argv[2]), percentage=0.35)

@@ -57,6 +57,7 @@ def receive_parameters():
 	chains_rec = int(data_rec['Chains'])
 	blocks_rec  = int(data_rec['Blocks'])
 	miners_rec  = int(data_rec['Miners'])
+	attacker_power = float(data_rec['AttackerPower'])
 
 	global number_of_chains
 	number_of_chains = chains_rec
@@ -74,7 +75,7 @@ def receive_parameters():
 
 		winners_list[i] = []
 
-	stri = "python miner_code/miner.py {} {}".format( str(blocks_rec), str(miners_rec))
+	stri = "python miner_code/miner.py {} {} {} ".format( str(blocks_rec), str(miners_rec), str(attacker_power))
 	os.system(stri)
 
 	return jsonify(data="true")
@@ -103,7 +104,6 @@ def return_miner_info():
 
 @app.route('/ledger')
 def ledger():
-
 	data = {}
 	for k,value in winners_list.items():
 		data[k] = {}
@@ -115,11 +115,10 @@ def ledger():
 				data[k][i['winner']]['coins'] = i['reward']
 				data[k][i['winner']]['power'] = miners_[i['winner']]
 
-
-
 	return jsonify(data={
 		'account': data,
-		'sequence':winners_list
+		'sequence':winners_list,
+		'miners' : miners_
 	})
 
 @app.route('/refresh/')
@@ -176,6 +175,7 @@ def join(power):
 @app.route('/discover/')
 def discover_chains():
 	return jsonify(data=chains)
+
 
 @app.route("/chain_powers/<chain>/<current_power>/<miner_id>")
 def chain_powers(chain, current_power, miner_id):

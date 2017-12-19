@@ -58,14 +58,20 @@ def receive_parameters():
 	blocks_rec  = int(data_rec['Blocks'])
 	miners_rec  = int(data_rec['Miners'])
 	attacker_power = float(data_rec['AttackerPower'])
+	reward_rec = float(data_rec['Reward'])
 
 	global number_of_chains
 	number_of_chains = chains_rec
 
 	for i in range(1, number_of_chains+1):
+		if i == number_of_chains:
+			reward = reward_rec
+		else:
+			reward = 10.0
+
 		chains[i] = {
 			'chain_id': i,
-			'reward' : 10,
+			'reward' : reward,
 			'step' : 0,
 			'total_power' : 0,
 			'winner_last' : -1,

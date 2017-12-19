@@ -77,6 +77,7 @@ function sendParameters() {
       Done = false
       sendParameters()
     } else {
+      Counter = 0
       $("#LedgerProgress").width("0%")
       $("#LedgerProgressText").text("Complete")
       alert("COMPLETE")
@@ -108,7 +109,7 @@ function startSimulation(last=0) {
       for (var i in accountInfo) {
         ids = Object.keys(accountInfo[i])
         for(var j = 0; j < ids.length; j++) {
-          if(ids[j] == attacker) {
+          if(ids[j] == attacker && i == 1) {
             totalBlocksAttacker = parseInt(accountInfo[i][ids[j]]['coins']/10)
             $("#Account").append("<tr>")
             $("#Account").append("<td style='color:red'>"+ids[j] + "</td>")

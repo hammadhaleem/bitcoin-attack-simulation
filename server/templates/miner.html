@@ -4,8 +4,7 @@
 <head>
     <title>Miner template</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" >
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <style>
@@ -18,31 +17,41 @@
 </head>
 
 <body>
-  <div class="container">
-   <h1>ChainAttacker:Blockchain Simulation System</h1>
-   # Chains <input type='number' placeholder=2 value = 1 id='Chains'>
-   # Miners <input type='number' placeholder=10 value = 1 id='Miners'>
-   # Solved Blocks <input type='number' placeholder=30 value = 1 id='Blocks'>
-   Base Attacker Power <input type='number' placeholder=35 value = 35 id='attackerPower'>
-   Reward for Puzzle Block <input type='number' placeholder=10 value = 10 id='Reward'>
-   <input type='submit' onclick='sendParameters()'>
-   <br><br><br><br>
-   <div class="progress">
-  <div id='LedgerProgress' class="progress-bar" role="progressbar" aria-valuenow="0"
-  aria-valuemin="0" aria-valuemax="100" style="width:0%">
-  <span id='LedgerProgressText'><span>
-  </div>
-</div>
-   <div id='Ledger'>
-     <table id='Account' style="border-collapse: separate; border-spacing: 10px;">
-     </table>
-   </div>
-   <div id='Results'>
-     <table id='RoundsSummary' style="border-collapse: separate;align:center; border-spacing: 10px;">
-     </table>
-   </div>
-</div>
+    <div class="container">
+        <h1>ChainAttacker:&nbsp;&nbsp;Blockchain Simulation System</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="progress">
+                    <div id='LedgerProgress' class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                    </div>
+                </div>
+                <div id='Ledger'>
+                    <table id='Account' class="table table-condensed" style="border-collapse: separate; border-spacing: 10px;">
+                    </table>
+                </div>
+                <div id='Results'>
+                  <table id='RoundsSummary' class ='table table-condensed' style="border-collapse: separate; border-spacing: 10px;">
+                  </table>
+                </div>
+            </div>
+            <div class="col-md-4">
+                    <br/><h3># Chains</h3>
+                    <input type='number' class="form-control" placeholder=1 value=1 id='Chains'>
+                    <br/><h3># Miners</h3>
+                    <input type='number' class="form-control" placeholder=2 value=2 id='Miners'>
+                    <br/><h3># Solved Blocks</h3>
+                    <input type='number' class="form-control" placeholder=10 value=10 id='Blocks'>
+                    <br/><h3>Base Attacker Power</h3>
+                    <input type='number' class="form-control" placeholder=35 value=3 5 id='attackerPower'>
+                    <br/><h3>Reward for Puzzle Block</h3>
+                    <input type='number' class="form-control" placeholder=10 value=1 0 id='Reward'>
+                    <br>
+                    <input type='submit' class="btn btn-primary" onclick='sendParameters();'>
 
+            </div>
+        </div>
+
+    </div>
 </body>
 <script>
 Done = false
@@ -158,6 +167,34 @@ function AddToResultsSummary(AttackerBlocks,OtherBlocks,AttackerCost) {
 }
 
 
+    function startSimulation() {
+        $.get('http://localhost:5000/ledger', function(result) {
+            accountInfo = eval(result)['data']['account']
+            sequenceInfo = eval(result)['data']['sequence']
+                //$("#Ledger").empty().append(JSON.stringify(sequenceInfo))
+                // Account Table
+            totalCoins = 0
+            attacker = eval(result)['data']['attacker']
+            $("#Account").empty().append("<tr><th>ID</th><th>Chain</th><th> Money </th> <th> Power </th></tr>")
+            for (var i in accountInfo) {
+                ids = Object.keys(accountInfo[i])
+                for (var j = 0; j < ids.length; j++) {
+                    $("#Account").append("<tr cellpadding='5'>")
+                    if (ids[j] == attacker) {
+                        $("#Account").append("<td><p style='color:red;'>" + ids[j] + "</p></td>")
+                    } else {
+                        $("#Account").append("<td>" + ids[j] + "</td>")
+                    }
+                    $("#Account").append("<td>" + i + "</td>")
+                    $("#Account").append("<td>" + accountInfo[i][ids[j]]['coins'] + "</td>")
+                    $("#Account").append("<td>" + accountInfo[i][ids[j]]['power'] + "</td>")
+                    $("#Account").append("</tr>")
+                    totalCoins += accountInfo[i][ids[j]]['coins']
+                }
+            }
+            updateLedgerProgress(totalCoins / 10)
+        })
+    }
 </script>
 
 </html>

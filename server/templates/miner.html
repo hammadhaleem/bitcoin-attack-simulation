@@ -16,10 +16,10 @@
 <body>
   <div class="container">
    <h1>ChainAttacker:Blockchain Simulation System</h1>
-   <input type='number' placeholder=2 value = 1 id='Chains'> # Chains
-   <input type='number' placeholder=10 value = 1 id='Miners'> # Miners
-   <input type='number' placeholder=30 value = 1 id='Blocks'> # Solved Blocks
-   <input type='number' placeholder=35 value = 35 id='attackerPower'> Base Attacker Power
+   # Chains <input type='number' placeholder=2 value = 1 id='Chains'>
+   # Miners <input type='number' placeholder=10 value = 1 id='Miners'>
+   # Solved Blocks <input type='number' placeholder=30 value = 1 id='Blocks'>
+   Base Attacker Power <input type='number' placeholder=35 value = 35 id='attackerPower'>
    <input type='submit' onclick='sendParameters()'>
    <br><br><br><br>
    <div id='Ledger'>
@@ -34,7 +34,9 @@ function sendParameters() {
   data = {
     'Chains': parseInt($("#Chains").val()),
     'Miners': parseInt($("#Miners").val()),
-    'Blocks': parseInt($("#Blocks").val())
+    'Blocks': parseInt($("#Blocks").val()),
+    'AttackerPower': parseInt($("#attackerPower").val())/100
+
   };
 
   console.log(data);

@@ -142,4 +142,6 @@ def run_miners(blocks, miners, percentage):
         else:
             Miners.append(Miner(i, blocks))
 
+    s = [i.start() for i in Miners]
+
 run_miners(blocks=int(sys.argv[1]), miners=int(sys.argv[2]), percentage=0.35)

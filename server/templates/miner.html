@@ -19,6 +19,7 @@
    <input type='number' placeholder=2 value = 1 id='Chains'> # Chains
    <input type='number' placeholder=10 value = 1 id='Miners'> # Miners
    <input type='number' placeholder=30 value = 1 id='Blocks'> # Solved Blocks
+   <input type='number' placeholder=35 value = 35 id='attackerPower'> Base Attacker Power
    <input type='submit' onclick='sendParameters()'>
    <br><br><br><br>
    <div id='Ledger'>
@@ -37,8 +38,10 @@ function sendParameters() {
   };
 
   console.log(data);
+  a = setInterval(startSimulation,1000)
   $.post("http://localhost:5000/send_parameters", data, function(result) {
-    startSimulation()
+    clearInterval(a)
+    startSimulation();
   })
 }
 

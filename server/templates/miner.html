@@ -69,11 +69,21 @@ function sendParameters() {
     'AttackerPower': parseInt($("#attackerPower").val())/100,
     'Reward': parseInt($("#Reward").val())
   };
-  a = setInterval(startSimulation,1000)
+  a = setInterval(startSimulation,5000)
   $.post("http://localhost:5000/send_parameters", data, function(result) {
     clearInterval(a)
     startSimulation(1);
-    if(Counter < 6) {
+    if(Counter < 10) {
+      Done = false
+      sendParameters()
+    } else if (parseInt($("#Chains").val()) == 1) {
+      Counter = 0
+      $("#Chains").val("2")
+      Done = false
+      sendParameters()
+    } else if(parseInt($("#Reward").val()) > 5) {
+      Counter = 0
+      $("#Reward").val(parseInt($("#Reward").val())-1)
       Done = false
       sendParameters()
     } else {
@@ -93,60 +103,57 @@ function updateLedgerProgress(Found) {
   $("#LedgerProgress").attr("aria-valuenow",PercentageFound)
 }
 function startSimulation(last=0) {
-  console.log("Simulating")
+  console.log("Simulating ")
   $.get('http://localhost:5000/ledger',function(result) {
-    if(!Done) {
-      accountInfo = eval(result)['data']['account']
-      sequenceInfo = eval(result)['data']['sequence']
-      //$("#Ledger").empty().append(JSON.stringify(sequenceInfo))
-      // Account Table
-      totalCoins = 0
-      attacker = eval(result)['data']['attacker']
-      $("#Account").empty().append("<tr><th>ID</th><th> Blocks Mined </th></tr>")
-      totalBlocksOfOthers = 0
-      totalBlocksAttacker = 0
-      costToAttacker = 0
-      for (var i in accountInfo) {
-        ids = Object.keys(accountInfo[i])
-        for(var j = 0; j < ids.length; j++) {
-          if(ids[j] == attacker && i == 1) {
-            totalBlocksAttacker = parseInt(accountInfo[i][ids[j]]['coins']/10)
-            $("#Account").append("<tr>")
-            $("#Account").append("<td style='color:red'>"+ids[j] + "</td>")
-            $("#Account").append("<td>"+parseInt(accountInfo[i][ids[j]]['coins']/10) + "</td>")
-            //$("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
-            $("#Account").append("</tr>")
-          } else if(i == 1) {
-            totalBlocksOfOthers += parseInt(accountInfo[i][ids[j]]['coins']/10)
-            //$("#Account").append("<td>"+ids[j] + "</td>")
-          } else {
-            costToAttacker += accountInfo[i][ids[j]]['coins']
-          }
-          if(i == 1) {
-            totalCoins += accountInfo[i][ids[j]]['coins']
-          }
+    accountInfo = eval(result)['data']['account']
+    sequenceInfo = eval(result)['data']['sequence']
+    //$("#Ledger").empty().append(JSON.stringify(sequenceInfo))
+    // Account Table
+    totalCoins = 0
+    attacker = eval(result)['data']['attacker']
+    $("#Account").empty().append("<tr><th>ID</th><th> Blocks Mined </th></tr>")
+    totalBlocksOfOthers = 0
+    totalBlocksAttacker = 0
+    costToAttacker = 0
+    for (var i in accountInfo) {
+      ids = Object.keys(accountInfo[i])
+      for(var j = 0; j < ids.length; j++) {
+        if(ids[j] == attacker && i == 1) {
+          totalBlocksAttacker = parseInt(accountInfo[i][ids[j]]['coins']/10)
+          $("#Account").append("<tr>")
+          $("#Account").append("<td style='color:red'>"+ids[j] + "</td>")
+          $("#Account").append("<td>"+parseInt(accountInfo[i][ids[j]]['coins']/10) + "</td>")
+          //$("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
+          $("#Account").append("</tr>")
+        } else if(i == 1) {
+          totalBlocksOfOthers += parseInt(accountInfo[i][ids[j]]['coins']/10)
+          //$("#Account").append("<td>"+ids[j] + "</td>")
+        } else {
+          costToAttacker += accountInfo[i][ids[j]]['coins']
         }
-    }
-    if(totalBlocksOfOthers > 0) {
-      $("#Account").append("<tr>")
-      $("#Account").append("<td> Other Miners </td>")
-      $("#Account").append("<td>"+totalBlocksOfOthers + "</td>")
-    //  $("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
-      $("#Account").append("</tr>")
-    }
-    if(costToAttacker > 0) {
-      $("#Account").append("<tr>")
-      $("#Account").append("<td> Cost to Attacker </td>")
-      $("#Account").append("<td>"+costToAttacker + "</td>")
-    //  $("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
-      $("#Account").append("</tr>")
-    }
-    if(last == 1) {
-      Done = true
-      AddToResultsSummary(totalBlocksAttacker,totalBlocksOfOthers,costToAttacker)
-    }
-  updateLedgerProgress(totalCoins/10)
+        if(i == 1) {
+          totalCoins += accountInfo[i][ids[j]]['coins']
+        }
+      }
   }
+  if(totalBlocksOfOthers > 0) {
+    $("#Account").append("<tr>")
+    $("#Account").append("<td> Other Miners </td>")
+    $("#Account").append("<td>"+totalBlocksOfOthers + "</td>")
+  //  $("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
+    $("#Account").append("</tr>")
+  }
+  if(costToAttacker > 0) {
+    $("#Account").append("<tr>")
+    $("#Account").append("<td> Cost to Attacker </td>")
+    $("#Account").append("<td>"+costToAttacker + "</td>")
+  //  $("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
+    $("#Account").append("</tr>")
+  }
+  if(last == 1) {
+    AddToResultsSummary(totalBlocksAttacker,totalBlocksOfOthers,costToAttacker)
+  }
+updateLedgerProgress(totalCoins/10)
   })
 }
 

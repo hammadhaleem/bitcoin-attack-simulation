@@ -8,7 +8,7 @@ import pprint as pp
 from random import randint
 from time import sleep
 from settings import  *
-serverurl = 'http://0.0.0.0:5000' #'http://10.89.91.27:5000' if int(sys.argv[1]) == 1 else 'http://0.0.0.0:5000'
+serverurl = 'http://0.0.0.0:' #'http://10.89.91.27:5000' if int(sys.argv[1]) == 1 else 'http://0.0.0.0:5000'
 
 completedChains = set()
 open("money.txt","w").close()
@@ -148,7 +148,9 @@ class Miner(threading.Thread ):
         #print("Miner " + str(self.ID) + " finished his round in " + str(time.time() - start_time))
         #print("Miner " + str(self.ID) + " sees " + str(self.allChains))
 
-def run_miners(blocks, miners, percentage):
+def run_miners(blocks, miners, percentage, port):
+    global serverurl
+    serverurl = serverurl+str(port)
     Miners = []
     a = time.time()
     for i in range(miners):
@@ -162,4 +164,4 @@ def run_miners(blocks, miners, percentage):
 
     s = [i.start() for i in Miners]
 
-run_miners(blocks=int(sys.argv[1]), miners=int(sys.argv[2]), percentage=float(sys.argv[3]))
+run_miners(blocks=int(sys.argv[1]), miners=int(sys.argv[2]), percentage=float(sys.argv[3]), port=int(sys.argv[4]))

@@ -77,7 +77,7 @@ function sendParameters() {
   a = setInterval(startSimulation,500)
   $.post("/send_parameters", data, function(result) {
     clearInterval(a)
-    startSimulation(1);
+    a = startSimulation(1);
     if(Counter < 10) {
       Done = false
       sendParameters()
@@ -100,7 +100,7 @@ function sendParameters() {
   })
 }
 
-    function updateLedgerProgress(Found) {
+function updateLedgerProgress(Found) {
         PercentageFound = parseInt(100 * (Found / parseInt($("#Blocks").val())))
         $("#LedgerProgressText").text(Found + "/" + parseInt($("#Blocks").val()))
         $("#LedgerProgress").width(PercentageFound + "%")

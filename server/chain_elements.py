@@ -48,6 +48,18 @@ for i in range(1, number_of_chains+1):
 
 	winners_list[i] = []
 
+def ledger_data():
+	data = {}
+	for k,value in winners_list.items():
+		data[k] = {}
+		for i in value:
+			try:
+				data[k][i['winner']]['coins'] += i['reward']
+			except:
+				data[k][i['winner']] ={}
+				data[k][i['winner']]['coins'] = i['reward']
+				data[k][i['winner']]['power'] = miners_[i['winner']]
+	return data 
 
 @app.route("/send_parameters/", methods=['GET', 'POST'])
 @app.route("/send_parameters", methods=['GET', 'POST'])
@@ -85,9 +97,25 @@ def receive_parameters():
 	stri = "python3 miner_code/miner.py {} {} {} {}".format( str(blocks_rec), str(miners_rec), str(attacker_power), str(app_port))
 	os.system(stri)
 
-	return jsonify(data="true")
+	data = ledger_data()
+	return jsonify(data={
+		'account': data,
+		'sequence':winners_list,
+		'miners' : miners_,
+		'attacker' : attacker_id
+	})
 
+@app.route('/ledger')
+def ledger():
+	data = ledger_data()
+	return jsonify(data={
+		'account': data,
+		'sequence':winners_list,
+		'miners' : miners_,
+		'attacker' : attacker_id
+	})
 
+	
 @app.route("/favicon.ico")
 def return_none():
 	return jsonify({})
@@ -109,25 +137,7 @@ def return_miner_info():
 		'all_joined_miners':len(miners_.keys())
 	})
 
-@app.route('/ledger')
-def ledger():
-	data = {}
-	for k,value in winners_list.items():
-		data[k] = {}
-		for i in value:
-			try:
-				data[k][i['winner']]['coins'] += i['reward']
-			except:
-				data[k][i['winner']] ={}
-				data[k][i['winner']]['coins'] = i['reward']
-				data[k][i['winner']]['power'] = miners_[i['winner']]
 
-	return jsonify(data={
-		'account': data,
-		'sequence':winners_list,
-		'miners' : miners_,
-		'attacker' : attacker_id
-	})
 
 @app.route("/attacker/<miner_id>")
 def set_attacker(miner_id):
@@ -220,8 +230,8 @@ def chain_powers(chain, current_power, miner_id):
 
 	chain_info = chain_power_allocated[chain]
 
-	powers = [ int(chain_info[miner]) for miner in chain_info.keys()]
-	chains[chain]['total_power'] = sum(powers)
+	powers = [ int(chain_info[miner]) for miner in chain_info.keys()] 
+	chains[chain]['total_power'] = sum(powers) 
 	# print((powers,float(current_power) / sum(powers) ))
 	return jsonify(data={
 		'relative_power' : float(current_power) / sum(powers),

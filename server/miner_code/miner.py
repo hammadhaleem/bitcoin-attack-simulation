@@ -163,5 +163,7 @@ def run_miners(blocks, miners, percentage, port):
             Miners.append(Miner(i, blocks))
 
     s = [i.start() for i in Miners]
+    for m in Miners:
+        m.join()
 
 run_miners(blocks=int(sys.argv[1]), miners=int(sys.argv[2]), percentage=float(sys.argv[3]), port=int(sys.argv[4]))

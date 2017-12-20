@@ -1,4 +1,4 @@
-# bitcoin-attack-simulation
+# Bitcoin attack simulation
 
 Running Instructions:
 

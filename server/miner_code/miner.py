@@ -8,7 +8,7 @@ import pprint as pp
 from random import randint
 from time import sleep
 from settings import  *
-serverurl = 'http://0.0.0.0:5000' #'http://10.89.91.27:5000' if int(sys.argv[1]) == 1 else 'http://0.0.0.0:5000'
+serverurl = 'http://0.0.0.0:' #'http://10.89.91.27:5000' if int(sys.argv[1]) == 1 else 'http://0.0.0.0:5000'
 
 completedChains = set()
 open("money.txt","w").close()
@@ -74,7 +74,7 @@ class Miner(threading.Thread ):
                     urls.append(serverurl+"/chain_powers/"+str(val['chain_id'])+'/' + str(self.totalPower) + '/'+str(self.ID))
             else:
                 urls.append(serverurl+"/chain_powers/"+str(val['chain_id'])+'/'+str(powerPerChain[str(i)])+'/'+str(self.ID))
-        print(self.ID," ",powerPerChain)
+        # print(self.ID," ",powerPerChain)
         result = (grequests.get(u) for u in urls)
         result = [eval(a.text)['data'] for  a in grequests.map(result)]
         for i in range(len(self.allChains)):
@@ -126,7 +126,7 @@ class Miner(threading.Thread ):
             for k,v in self.all_blocks.items():
                 if int(k) == 1:
                     current_blocks_discovered+=int(v)
-            print(current_blocks_discovered)
+            # print(current_blocks_discovered)
             # print((self.internalID, self.all_blocks))
             with open("money.txt","a+") as f:
                 f.write("Miner " + str(self.internalID) + " has Money " + str(self.totalCoins) + "\n")
@@ -148,7 +148,9 @@ class Miner(threading.Thread ):
         #print("Miner " + str(self.ID) + " finished his round in " + str(time.time() - start_time))
         #print("Miner " + str(self.ID) + " sees " + str(self.allChains))
 
-def run_miners(blocks, miners, percentage):
+def run_miners(blocks, miners, percentage, port):
+    global serverurl
+    serverurl = serverurl+str(port)
     Miners = []
     a = time.time()
     for i in range(miners):
@@ -162,4 +164,4 @@ def run_miners(blocks, miners, percentage):
 
     s = [i.start() for i in Miners]
 
-run_miners(blocks=int(sys.argv[1]), miners=int(sys.argv[2]), percentage=float(sys.argv[3]))
+run_miners(blocks=int(sys.argv[1]), miners=int(sys.argv[2]), percentage=float(sys.argv[3]), port=int(sys.argv[4]))

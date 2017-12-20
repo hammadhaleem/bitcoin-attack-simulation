@@ -16,7 +16,7 @@ from server import *
 number_of_chains = 1
 max_solution_size = 1000
 
-serverurl = 'http://0.0.0.0:5000'
+serverurl = 'http://0.0.0.0:'+str(int(app_port))
 
 chain_step = 0
 
@@ -82,7 +82,7 @@ def receive_parameters():
 
 		winners_list[i] = []
 
-	stri = "python miner_code/miner.py {} {} {} ".format( str(blocks_rec), str(miners_rec), str(attacker_power))
+	stri = "python3 miner_code/miner.py {} {} {} {}".format( str(blocks_rec), str(miners_rec), str(attacker_power), str(app_port))
 	os.system(stri)
 
 	return jsonify(data="true")

@@ -5,14 +5,12 @@
     <title>Miner template</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <style>
-    td {
-      text-align: center
-    }
+        td {
+            text-align: center
+        }
     </style>
-
 
 </head>
 
@@ -30,23 +28,30 @@
                     </table>
                 </div>
                 <div id='Results'>
-                  <table id='RoundsSummary' class ='table table-condensed' style="border-collapse: separate; border-spacing: 10px;">
-                  </table>
+                    <table id='RoundsSummary' class='table table-condensed' style="border-collapse: separate; border-spacing: 10px;">
+                    </table>
                 </div>
             </div>
             <div class="col-md-4">
-                    <br/><h3># Chains</h3>
-                    <input type='number' class="form-control" placeholder=1 value=1 id='Chains'>
-                    <br/><h3># Miners</h3>
-                    <input type='number' class="form-control" placeholder=2 value=2 id='Miners'>
-                    <br/><h3># Solved Blocks</h3>
-                    <input type='number' class="form-control" placeholder=10 value=10 id='Blocks'>
-                    <br/><h3>Base Attacker Power</h3>
-                    <input type='number' class="form-control" placeholder=35 value=35 id='attackerPower'>
-                    <br/><h3>Reward for Puzzle Block</h3>
-                    <input type='number' class="form-control" placeholder=10 value=10 id='Reward'>
-                    <br>
-                    <input type='submit' class="btn btn-primary" onclick='sendParameters();'>
+                <br/>
+                <h4># Chains ( 1 or 2 )</h4>
+                <input type='number' class="form-control" placeholder=1 value=1 id='Chains'>
+                <br/>
+                <h4># Miners ( < 20 ) </h4>
+                <input type='number' class="form-control" placeholder=2 value=2 id='Miners'>
+                <br/>
+                <h4># Solved Blocks</h4>
+                <input type='number' class="form-control" placeholder=10 value=10 id='Blocks'>
+                <br/>
+                <h4>Base Attacker Power (0 to 99)</h4>
+                <input type='number' class="form-control" placeholder=35 value=35 id='attackerPower'>
+                <br/>
+                <h4>Reward for Puzzle Block</h4>
+                <input type='number' class="form-control" placeholder=10 value=10 id='Reward'>
+                <br>
+                <p> This Model will run 10 simulations with your given parameters. Then, it will switch to having 2 chains
+                  if 1 chain is currently being used, and do 10 simulations with reward sizes between 5 and your chosen number.
+                <input type='submit' class="btn btn-primary" onclick='sendParameters();'>
 
             </div>
         </div>
@@ -69,8 +74,8 @@ function sendParameters() {
     'AttackerPower': parseInt($("#attackerPower").val())/100,
     'Reward': parseInt($("#Reward").val())
   };
-  a = setInterval(startSimulation,5000)
-  $.post("http://localhost:5000/send_parameters", data, function(result) {
+  a = setInterval(startSimulation,500)
+  $.post("/send_parameters", data, function(result) {
     clearInterval(a)
     startSimulation(1);
     if(Counter < 10) {
@@ -95,16 +100,15 @@ function sendParameters() {
   })
 }
 
-function updateLedgerProgress(Found) {
-  PercentageFound = parseInt(100*(Found/parseInt($("#Blocks").val())))
-  $("#LedgerProgressText").text(Found+"/"+parseInt($("#Blocks").val()))
-  $("#LedgerProgress").width(PercentageFound+"%")
-
-  $("#LedgerProgress").attr("aria-valuenow",PercentageFound)
+    function updateLedgerProgress(Found) {
+        PercentageFound = parseInt(100 * (Found / parseInt($("#Blocks").val())))
+        $("#LedgerProgressText").text(Found + "/" + parseInt($("#Blocks").val()))
+        $("#LedgerProgress").width(PercentageFound + "%")
+        $("#LedgerProgress").attr("aria-valuenow",PercentageFound)
 }
 function startSimulation(last=0) {
   console.log("Simulating ")
-  $.get('http://localhost:5000/ledger',function(result) {
+  $.get('/ledger',function(result) {
     accountInfo = eval(result)['data']['account']
     sequenceInfo = eval(result)['data']['sequence']
     //$("#Ledger").empty().append(JSON.stringify(sequenceInfo))
@@ -157,19 +161,19 @@ updateLedgerProgress(totalCoins/10)
   })
 }
 
-function AddToResultsSummary(AttackerBlocks,OtherBlocks,AttackerCost) {
-  onlyOne = (parseInt($("#Chains").val()) == 1)
-  $("#RoundsSummary").append("<tr>")
-    $("#RoundsSummary").append("<td>" + $("#Chains").val() + " </td>")
-    $("#RoundsSummary").append("<td>" + $("#Miners").val() + " </td>")
-    $("#RoundsSummary").append("<td>" + $("#Blocks").val() + " </td>")
-    $("#RoundsSummary").append("<td>" + (onlyOne ? '-' : $("#Reward").val()) + " </td>")
-    $("#RoundsSummary").append("<td>" + AttackerBlocks + " </td>")
-    $("#RoundsSummary").append("<td>" + OtherBlocks + " </td>")
-    $("#RoundsSummary").append("<td>" + (onlyOne ? '-' : AttackerCost)  + " </td>")
-    $("#RoundsSummary").append("<td>" + (onlyOne ? '-' : AttackerBlocks*10 - AttackerCost) + " </td>")
-    $("#RoundsSummary").append("</tr>")
-}
+    function AddToResultsSummary(AttackerBlocks, OtherBlocks, AttackerCost) {
+        onlyOne = (parseInt($("#Chains").val()) == 1)
+        $("#RoundsSummary").append("<tr>")
+        $("#RoundsSummary").append("<td>" + $("#Chains").val() + " </td>")
+        $("#RoundsSummary").append("<td>" + $("#Miners").val() + " </td>")
+        $("#RoundsSummary").append("<td>" + $("#Blocks").val() + " </td>")
+        $("#RoundsSummary").append("<td>" + (onlyOne ? '-' : $("#Reward").val()) + " </td>")
+        $("#RoundsSummary").append("<td>" + AttackerBlocks + " </td>")
+        $("#RoundsSummary").append("<td>" + OtherBlocks + " </td>")
+        $("#RoundsSummary").append("<td>" + (onlyOne ? '-' : AttackerCost) + " </td>")
+        $("#RoundsSummary").append("<td>" + (onlyOne ? '-' : AttackerBlocks * 10 - AttackerCost) + " </td>")
+        $("#RoundsSummary").append("</tr>")
+    }
 </script>
 
 </html>

@@ -74,7 +74,7 @@ class Miner(threading.Thread ):
                     urls.append(serverurl+"/chain_powers/"+str(val['chain_id'])+'/' + str(self.totalPower) + '/'+str(self.ID))
             else:
                 urls.append(serverurl+"/chain_powers/"+str(val['chain_id'])+'/'+str(powerPerChain[str(i)])+'/'+str(self.ID))
-        print(self.ID," ",powerPerChain)
+        # print(self.ID," ",powerPerChain)
         result = (grequests.get(u) for u in urls)
         result = [eval(a.text)['data'] for  a in grequests.map(result)]
         for i in range(len(self.allChains)):
@@ -126,7 +126,7 @@ class Miner(threading.Thread ):
             for k,v in self.all_blocks.items():
                 if int(k) == 1:
                     current_blocks_discovered+=int(v)
-            print(current_blocks_discovered)
+            # print(current_blocks_discovered)
             # print((self.internalID, self.all_blocks))
             with open("money.txt","a+") as f:
                 f.write("Miner " + str(self.internalID) + " has Money " + str(self.totalCoins) + "\n")

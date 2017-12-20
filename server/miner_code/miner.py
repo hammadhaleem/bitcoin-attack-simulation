@@ -114,7 +114,7 @@ class Miner(threading.Thread ):
 
         current_round = 0
         while True:
-            sleep(randint(10,100)/100)
+            # sleep(randint(10,100)/100)
             if current_round >= self.max_block_count:
                 break
 

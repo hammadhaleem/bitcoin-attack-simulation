@@ -130,12 +130,15 @@ function startSimulation(last=0) {
           //$("#Account").append("<td>"+accountInfo[i][ids[j]]['power'] + "</td>")
           $("#Account").append("</tr>")
         } else if(i == 1) {
+          console.log("Updating totalBlocksOfOthers to "+totalBlocksOfOthers)
           totalBlocksOfOthers += parseInt(accountInfo[i][ids[j]]['coins']/10)
           //$("#Account").append("<td>"+ids[j] + "</td>")
         } else {
+          console.log("Updating costToAttacker to "+costToAttacker)
           costToAttacker += accountInfo[i][ids[j]]['coins']
         }
         if(i == 1) {
+          console.log("Updating totalCoins to "+totalCoins)
           totalCoins += accountInfo[i][ids[j]]['coins']
         }
       }

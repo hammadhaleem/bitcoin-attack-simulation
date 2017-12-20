@@ -82,7 +82,7 @@ def receive_parameters():
 
 		winners_list[i] = []
 
-	stri = "python miner_code/miner.py {} {} {} {}".format( str(blocks_rec), str(miners_rec), str(attacker_power), str(app_port))
+	stri = "python3 miner_code/miner.py {} {} {} {}".format( str(blocks_rec), str(miners_rec), str(attacker_power), str(app_port))
 	os.system(stri)
 
 	return jsonify(data="true")

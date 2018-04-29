@@ -82,7 +82,7 @@ class Miner(threading.Thread ):
             self.allChains[i]['my_relative_power'] = result[i]['relative_power']
 
     # Here the miner has already received its relative power, so it makes that
-    #many guesses and tells the server if it got it right or not. If its the
+    # many guesses and tells the server if it got it right or not. If its the
     # the first miner to tell the server its right, it will get the reward
     def do_mining(self):
         for i,val in enumerate(self.allChains):

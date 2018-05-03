@@ -1,4 +1,9 @@
 # Byte-compiled / optimized / DLL files
+<<<<<<< HEAD
+=======
+*.json
+*.txt
+>>>>>>> 79a16891899dd45631c3a797ecd6f3b270cec3c6
 __pycache__/
 *.py[cod]
 *$py.class

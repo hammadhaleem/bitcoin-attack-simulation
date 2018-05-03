@@ -29,35 +29,52 @@ class MinerThread(threading.Thread):
         self.miner_id = self.ID.split('_')[0]
         self.block_range = self.get_current_block_range()
         self.max_rounds = max_rounds
-        print(self.ID)
+
+        self.ledger = {
+            1:{},
+            2:{},
+            3:{}
+        }
 
     def get_current_block_range(self):
         url = serverurl + '/round'
         data = eval(requests.get(url).text)['data']
         return data['round']
 
+    def run_miner_logic(self, chain):
+        try:
+            solution = randint(1, self.block_range)
+
+            url = serverurl + '/solution/{}/{}/{}'.format(
+                    self.miner_id, solution,
+                    self.block_range
+            )
+
+            self.ledger[chain][self.block_range] = 0
+
+            # adding certain randomness in the whole process
+            time.sleep(random.randint(1,100)*0.001)
+
+            r = requests.get(url)
+            data = eval(r.text)['data']
+
+            if data['solution'] == 'accepted':
+                self.ledger[chain][self.block_range] = 1
+
+            # print(self.ledger)
+            self.block_range = data['current_block']
+
+        except Exception as e:
+            print(e)
+            pass
+
     def run(self):
         while True:
-            try:
-                solution = randint(1, self.block_range)
+            self.run_miner_logic(chain=1)
+            if self.max_rounds < self.block_range:
+                break
 
-                url = serverurl + '/solution/{}/{}/{}'\
-                    .format(self.miner_id, solution, self.block_range)
-                r = requests.get(url)
-
-                data = eval(r.text)['data']
-
-                # print(url, data)
-                # if data['solution'] == 'accepted':
-                #     pass #print (self.ID, url, data)
-                # else:
-
-                self.block_range = data['current_block']
-
-                if self.max_rounds < self.block_range:
-                    break
-            except:
-                pass
+        print(self.ID, self.ledger)
 
 
 def create_multi_threaded_miners(number_of_threads, process_id, max_rounds):
@@ -75,11 +92,14 @@ def create_multi_threaded_miners(number_of_threads, process_id, max_rounds):
         m = MinerThread(str(ID) + '_' + str(i), max_rounds)
         miners.append(m)
 
-    for i in miners:
-        i.run()
+    # random.shuffle(miners)
 
-def run_all(max_numer_of_miners=5, max_number_of_threads=10, max_rounds=100):
-    sleep(1)
+    [m.start() for m in miners]
+    [m.join() for m in miners]
+
+
+def run_all(max_numer_of_miners=5, max_number_of_threads=2, max_rounds=100):
+    sleep(0.1)
     requests.get(serverurl + '/reset/')
     data = eval(requests.get(serverurl+"/set_rounds/"+str(max_rounds)).text)['data']['max_rounds']
 
@@ -87,20 +107,18 @@ def run_all(max_numer_of_miners=5, max_number_of_threads=10, max_rounds=100):
     processes = []
     for process_id in range(max_numer_of_miners):
         p = Process(target=create_multi_threaded_miners, args=(random.randint(1, max_number_of_threads), process_id, max_rounds))
-        p.start()
         processes.append(p)
 
-    for p in processes:
-        p.join()
+    [p.start() for p in processes]
+    [p.join() for p in processes]
 
     return time.time() - start_time
 
 
-max_rounds = 150
+max_rounds = 100
 
 for i in range(1,1+10):
     i  = i * 10
-
     time_taken = run_all(max_numer_of_miners=i, max_number_of_threads=10, max_rounds=max_rounds)
     print("Total time taken for {} rounds= {}, number_of_miners={}".format(max_rounds, time_taken, i ))
     break

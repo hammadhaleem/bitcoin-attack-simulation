@@ -25,24 +25,27 @@ max_solution_size = 1000
 
 serverurl = 'http://0.0.0.0:' + str(int(app_port))
 
-@app.route('/set_rounds/<rounds>')
-def set_rounds(rounds):
-    cache.set('max_rounds', int(rounds), timeout=5 * 60 * 60)
-
-    return jsonify(data={'max_rounds': rounds})
-
-
 @app.route('/join/<power>')
 def join(power):
-    miners = cache.get('miners')
-    miners_ = cache.get('miners_')
 
-    miner_id = str(uuid.uuid1())
-    miners.append(miner_id)
-    miners_[miner_id] = int(power)
+    # lock based system to make sure all the miners have joined.
+    while True:
+        time.sleep(0.01 * random.randint(10,100))
+        if cache.get('join_lock') == False:
 
-    cache.set('miners_', miners_, timeout=5 * 60 * 60)
-    cache.set('miners', miners, timeout=5 * 60 * 60)
+            miners = cache.get('miners')
+            miners_ = cache.get('miners_')
+            cache.set('join_lock', True, timeout=5 * 60 * 60)
+
+            miner_id = str(uuid.uuid1())
+            miners.append(miner_id)
+            miners_[miner_id] = int(power)
+
+            cache.set('miners_', miners_, timeout=5 * 60 * 60)
+            cache.set('miners', miners, timeout=5 * 60 * 60)
+
+            cache.set('join_lock', False, timeout=5 * 60 * 60)
+            break
 
     return jsonify(data={'miner_id': miner_id})
 
@@ -50,8 +53,10 @@ def join(power):
 @app.route('/get_all_miners')
 def return_miner_info():
     winners_ledger = cache.get('winners_ledger')
-    return jsonify(data={'miners': list(set(winners_ledger.values())),
-                   'all_joined_miners': len(set(winners_ledger.values()))})
+    return jsonify(data={
+        'miners': cache.get('miners_'),
+        'total_miners': len(cache.get('miners'))
+    })
 
 
 @app.route('/solution/<miner_id>/<solution>/<current_block>')
@@ -61,17 +66,9 @@ def get_solution(miner_id, solution, current_block):
     solution = int(solution)
     current_block = int(current_block)
 
-
-    # if current_block > int(cache.get("max_rounds")):
-    #     return jsonify(data={'solution': 'not-accepted', 'current_block': cache.get("max_rounds")+1})
-    # print((solution, solution_global, current_block, current_block_global))
-
     while True:
         solution_global = cache.get('solution_global')
         current_block_global = cache.get('current_block_global')
-
-        # if current_block > int(cache.get("max_rounds")):
-        #     return jsonify(data={'solution': 'not-accepted', 'current_block': cache.get("max_rounds")+1})
 
         if current_block != current_block_global or solution != solution_global:
             return jsonify(data={'solution': 'not-accepted', 'current_block': current_block_global})
@@ -108,12 +105,16 @@ def get_solution(miner_id, solution, current_block):
     return jsonify(data={'solution': 'not-accepted',
                    'current_block': current_block_global})
 
+@app.route('/set_rounds/<rounds>')
+def set_rounds(rounds):
+    cache.set('max_rounds', int(rounds), timeout=5 * 60 * 60)
+    return jsonify(data={'max_rounds': rounds})
+
 @app.route("/reset")
 @app.route("/reset/")
 def reset():
-
-
     cache.set('lock', False,timeout=5 * 60 * 60)
+    cache.set('join_lock', False,timeout=5 * 60 * 60)
     cache.set('miners', [],timeout=5 * 60 * 60)
     cache.set('miners_', {},timeout=5 * 60 * 60)
     cache.set('block_size', [1],timeout=5 * 60 * 60)
@@ -142,4 +143,8 @@ def get_round():
 @app.route('/winners')
 def get_winners():
     winners_ledger = cache.get('winners_ledger')
-    return jsonify(data={'winners': winners_ledger})
+    return jsonify(data={
+        'winners': winners_ledger,
+        'total_rounds_passed': max(winners_ledger.keys()),
+        'all_miners': list(set(winners_ledger.values()))
+    })

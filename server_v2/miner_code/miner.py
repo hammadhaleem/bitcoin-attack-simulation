@@ -29,6 +29,7 @@ class MinerThread(threading.Thread):
         self.miner_id = self.ID.split('_')[0]
         self.block_range = self.get_current_block_range()
         self.max_rounds = max_rounds
+        print(self.ID)
 
     def get_current_block_range(self):
         url = serverurl + '/round'
@@ -43,15 +44,15 @@ class MinerThread(threading.Thread):
                 url = serverurl + '/solution/{}/{}/{}'\
                     .format(self.miner_id, solution, self.block_range)
                 r = requests.get(url)
-                
+
                 data = eval(r.text)['data']
 
                 # print(url, data)
+                # if data['solution'] == 'accepted':
+                #     pass #print (self.ID, url, data)
+                # else:
 
-                if data['solution'] == 'accepted':
-                    pass #print (self.ID, url, data)
-                else:
-                    self.block_range = data['current_block']
+                self.block_range = data['current_block']
 
                 if self.max_rounds < self.block_range:
                     break
@@ -72,9 +73,10 @@ def create_multi_threaded_miners(number_of_threads, process_id, max_rounds):
 
     for i in range(number_of_threads):
         m = MinerThread(str(ID) + '_' + str(i), max_rounds)
-        m.run()
         miners.append(m)
 
+    for i in miners:
+        i.run()
 
 def run_all(max_numer_of_miners=5, max_number_of_threads=10, max_rounds=100):
     sleep(1)
@@ -84,8 +86,7 @@ def run_all(max_numer_of_miners=5, max_number_of_threads=10, max_rounds=100):
     start_time = time.time()
     processes = []
     for process_id in range(max_numer_of_miners):
-        p = Process(target=create_multi_threaded_miners,
-                    args=(random.randint(1, max_number_of_threads), process_id, max_rounds))
+        p = Process(target=create_multi_threaded_miners, args=(random.randint(1, max_number_of_threads), process_id, max_rounds))
         p.start()
         processes.append(p)
 
@@ -95,13 +96,11 @@ def run_all(max_numer_of_miners=5, max_number_of_threads=10, max_rounds=100):
     return time.time() - start_time
 
 
-max_rounds = 50
+max_rounds = 150
 
 for i in range(1,1+10):
     i  = i * 10
 
     time_taken = run_all(max_numer_of_miners=i, max_number_of_threads=10, max_rounds=max_rounds)
     print("Total time taken for {} rounds= {}, number_of_miners={}".format(max_rounds, time_taken, i ))
-
-
-
+    break

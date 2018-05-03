@@ -62,17 +62,16 @@ def get_solution(miner_id, solution, current_block):
     current_block = int(current_block)
 
 
-    if current_block > int(cache.get("max_rounds")):
-        return jsonify(data={'solution': 'not-accepted', 'current_block': cache.get("max_rounds")+1})
+    # if current_block > int(cache.get("max_rounds")):
+    #     return jsonify(data={'solution': 'not-accepted', 'current_block': cache.get("max_rounds")+1})
     # print((solution, solution_global, current_block, current_block_global))
 
     while True:
         solution_global = cache.get('solution_global')
         current_block_global = cache.get('current_block_global')
 
-        if current_block > int(cache.get("max_rounds")):
-            return jsonify(data={'solution': 'not-accepted', 'current_block': cache.get("max_rounds")+1})
-
+        # if current_block > int(cache.get("max_rounds")):
+        #     return jsonify(data={'solution': 'not-accepted', 'current_block': cache.get("max_rounds")+1})
 
         if current_block != current_block_global or solution != solution_global:
             return jsonify(data={'solution': 'not-accepted', 'current_block': current_block_global})
@@ -90,13 +89,13 @@ def get_solution(miner_id, solution, current_block):
         if solution == solution_global and current_block_global == current_block:
             block_size.append(current_block_global + 1)
             current_block_global = current_block_global + 1
-            solcurrent_block_globalution_global = random.randint(1, current_block_global)
+            solution_global = random.randint(1, current_block_global)
 
             winners_ledger = cache.get('winners_ledger')
             if winners_ledger is None:
                 winners_ledger = {}
             winners_ledger[current_block] = miner_id
-            
+
             cache.set('current_block_global', current_block_global, timeout=5 * 60 * 60)
             cache.set('solution_global', solution_global, timeout=5 * 60 * 60)
             cache.set('winners_ledger', winners_ledger, timeout=5 * 60 * 60)
@@ -104,7 +103,7 @@ def get_solution(miner_id, solution, current_block):
 
             cache.set('lock', False, timeout=5 * 60 * 60)
 
-            return jsonify(data={'solution': 'accepted'})
+            return jsonify(data={'solution': 'accepted', 'current_block': current_block_global})
 
     return jsonify(data={'solution': 'not-accepted',
                    'current_block': current_block_global})

@@ -30,7 +30,7 @@ def join(power):
 
     # lock based system to make sure all the miners have joined.
     while True:
-        time.sleep(0.01 * random.randint(10,100))
+        # time.sleep(0.01 * random.randint(10,100))
         if cache.get('join_lock') == False:
 
             miners = cache.get('miners')
@@ -86,7 +86,7 @@ def get_solution(miner_id, solution, current_block):
         if solution == solution_global and current_block_global == current_block:
             block_size.append(current_block_global + 1)
             current_block_global = current_block_global + 1
-            solution_global = random.randint(1, current_block_global)
+            solution_global = random.randint(1, current_block_global*10)
 
             winners_ledger = cache.get('winners_ledger')
             if winners_ledger is None:

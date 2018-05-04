@@ -43,7 +43,7 @@ class MinerThread(threading.Thread):
 
     def run_miner_logic(self, chain):
         try:
-            solution = randint(1, self.block_range)
+            solution = randint(1, self.block_range*10)
 
             url = serverurl + '/solution/{}/{}/{}'.format(
                     self.miner_id, solution,
@@ -53,15 +53,20 @@ class MinerThread(threading.Thread):
             self.ledger[chain][self.block_range] = 0
 
             # adding certain randomness in the whole process
-            time.sleep(random.randint(1,100)*0.001)
+            # time.sleep(random.randint(1,100)*0.001)
 
             r = requests.get(url)
             data = eval(r.text)['data']
 
             if data['solution'] == 'accepted':
                 self.ledger[chain][self.block_range] = 1
+                print("Found solution for block {} by miner ID {} thread ID {} chain {}".format(
+                    self.block_range,
+                    self.miner_id,
+                    self.ID.split("_")[1],
+                    chain
+                ))
 
-            # print(self.ledger)
             self.block_range = data['current_block']
 
         except Exception as e:
@@ -84,9 +89,6 @@ def create_multi_threaded_miners(number_of_threads, process_id, max_rounds):
     r = requests.get(serverurl + '/join/' + str(number_of_threads))
     ID = eval(r.text)['data']['miner_id']
     # print ('Hello, I am Miner ' + str(ID))
-
-    # discover_chains()
-    # if self.attacker is True: requests.get(serverurl+"/attacker/"+str(self.ID))
 
     for i in range(number_of_threads):
         m = MinerThread(str(ID) + '_' + str(i), max_rounds)
@@ -115,7 +117,7 @@ def run_all(max_numer_of_miners=5, max_number_of_threads=2, max_rounds=100):
     return time.time() - start_time
 
 
-max_rounds = 100
+max_rounds = 50
 
 for i in range(1,1+10):
     i  = i * 10

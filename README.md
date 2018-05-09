@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # bitcoin-attack-simulation
 
 The idea is to create a simplified simulation of bitcoin, to see if you can
@@ -11,12 +11,6 @@ Progress:
 =======
 # Bitcoin attack simulation
 
->>>>>>> 79a16891899dd45631c3a797ecd6f3b270cec3c6
-Running Instructions:
-
-python server.py
-
-<<<<<<< HEAD
 python miner.py [num_of_blocks] [num_of_miners]
 =======
 # Introdcution 
@@ -27,4 +21,4 @@ Most of these proposed attacks are shown to be mathematically rigorous within th
 To acheive the goals of this system, we will create simulated workers that are given incentive functions similar to real-world incentive mechanisms. We then allow users to select where to start an attack in the network and simulate the attack over time in the network, providing a way for researchers to test their hypothetical attacks. All of this is visually explorable via our system's visual analytics. 
 
 * Simulation for `When cryptocurrencies mine their own business` ,  https://people.cs.uchicago.edu/~teutsch/papers/repurposing_miners.pdf
->>>>>>> 79a16891899dd45631c3a797ecd6f3b270cec3c6
+

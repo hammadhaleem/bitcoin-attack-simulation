@@ -1,16 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import glob
-import os
-import json
-import random
-import time
+import glob, os, json
+import random, time
 import networkx as nx
-import shutil
-import uuid
-import time
-import random
-import requests
+import shutil, uuid
+import time, random, requests
 
 from flask import jsonify
 from flask import Flask
